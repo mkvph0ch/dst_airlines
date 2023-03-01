@@ -111,6 +111,9 @@ env.bak/
 venv.bak/
 globals.py
 
+# VSCode project settings
+*.code-workspace
+
 # Spyder project settings
 .spyderproject
 .spyproject
