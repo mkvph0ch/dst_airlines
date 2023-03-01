@@ -1,0 +1,1137 @@
+AirlineID;AirlineID_ICAO;Names.Name.@LanguageCode;Names.Name.$
+0A;GNT;EN;Amber Air
+0B;BMS;EN;Blue Air
+0D;DWT;EN;Darwin Airline Sa
+0J;PJZ;EN;Premium Jet Ag
+0K;KRT;EN;Aircompany Kokshetau
+0P;PPC;EN;Palau Asia Pacific Air Inc.
+0S;SEJ;EN;Spicejet
+0V;VFC;EN;Vasco
+0W;WCR;EN;West Caribbean Costa Rica S.A.
+1A;AGT;EN;Amadeus Global Travel Distribution S.A.
+1I;EJA;EN;Netjets
+1L;OSY;EN;Open Skies Consultative Commission (Oscc)
+1P;WSP;EN;Worldspan (Atlanta_ Ga)
+1S;SBG;EN;Sabre_ Inc. (Southlake_ Tx)
+1X;;EN;Branson Airexpress
+2A;;EN;Deutsche Bahn AG
+2B;AWT;EN;Albawings
+2C;;EN;Sncf
+2D;DYA;EN;Dynamic International Airways
+2E;;EN;Smokey Bay Air
+2F;FAV;EN;Fair Aviation
+2G;AGU;EN;Angara Airlines
+2I;SRU;EN;Star Peru
+2J;VBW;EN;Air Burkina
+2K;GLG;EN;Avianca Ecuador
+2L;OAW;EN;Helvetic Airways
+2M;MYD;EN;Maya Island Air
+2N;NTJ;EN;Nextjet
+2O;;EN;Island Air Service
+2P;GAP;EN;Pal Express
+2Q;SNC;EN;Air Cargo Carriers
+2R;;EN;Via Rail Canada
+2S;;EN;Air Carnival
+2T;TUX;EN;Tulpar Air Service
+2U;;EN;Sun Dor International Airlines
+2V;;EN;Amtrak
+2W;;EN;Multiple Solutions
+2Y;MYU;EN;My Indo Airlines
+2Z;PTB;EN;Passaredo Transportes Aereos
+3A;;EN;Chu Kong Passenger Transport Co Ltd.
+3B;NTB;EN;Binter Cabo Verde
+3C;CVA;EN;Air Chathams
+3D;DNM;EN;Denim Air
+3E;WBR;EN;Air Choice One
+3F;;EN;Pacific Airways Inc
+3G;CXM;EN;Asia Cargo Express
+3H;AIE;EN;Air Inuit
+3J;JBW;EN;Jubba Airways
+3K;JSA;EN;Jetstar Asia
+3L;ISK;EN;Intersky Luftfahrt Gmbh
+3M;SIL;EN;Silver Airways
+3N;URG;EN;Air Urga
+3O;MAC;EN;Air Arabia Maroc
+3P;;EN;Air Philip
+3Q;;EN;Kc International Airlines
+3R;RGR;EN;Avior Regional
+3S;GUY;EN;Air Guyane Express
+3T;TRQ;EN;Tarco Air
+3U;CSC;EN;Sichuan Airlines
+3V;TAY;EN;Asl Airlines Belgium
+3W;MWI;EN;Malawian Airlines
+3X;;EN;Premier Trans Aire
+3Y;;EN;Baseops International Inc.
+3Z;TVP;EN;Travel Service Poland
+4A;DYN;EN;Aerodynamics
+4B;TUP;EN;Aviastar-Tu
+4C;ARE;EN;Latam Airlines Colombia
+4D;;EN;Air Sinai
+4E;;EN;Stabo Air
+4F;ECE;EN;Air-City
+4G;GZP;EN;Gazpromavia
+4H;LBW;EN;Albatros Airways
+4I;IZM;EN;Izair
+4J;NWZ;EN;Nationwide Airlines (Zambia) Limited
+4K;KBA;EN;Kenn Borek Air
+4L;LAU;EN;Lineas Aereas Suramericanas
+4M;DSM;EN;Latam Airlines Argentina
+4N;ANT;EN;Air North
+4O;AIJ;EN;Interjet
+4P;;EN;Regional Sky
+4Q;SFW;EN;Safi Airways
+4R;;EN;Renfe Viajeros
+4S;OLC;EN;Solar Cargo
+4T;BHP;EN;Belair Airlines Ag
+4U;GWI;EN;Germanwings
+4V;BVI;EN;Bvi Airways
+4W;WAV;EN;Warbelows Air Ventures
+4X;;EN;Mercury World Cargo
+4Y;BGA;EN;Airbus Transport International
+4Y;BGA;EN;Airbus Transport International
+4Y;OCN;EN;Eurowings Discover
+4Y;BGA;EN;Airbus Transport International
+4Y;BGA;EN;Airbus Transport International
+4Z;LNK;EN;Airlink
+5A;AIP;EN;Alpine Air
+5B;BSX;EN;Bassaka Air
+5C;NRR;EN;Nature Air
+5D;SLI;EN;Aeromexico Connect
+5E;JTM;EN;East Coast Flight Services Inc
+5F;FIA;EN;Flyone
+5G;CUO;EN;Aerocuahonte
+5H;FFV;EN;Fly540
+5H;FFV;EN;Fly540
+5I;;EN;Alsa Grupo Slu
+5J;CEB;EN;Cebu Pacific Air
+5K;HFY;EN;Hi Fly
+5L;RSU;EN;Aerosur_ Compania Boliviana De Transporte Aereo Privado S.A.
+5M;MNT;EN;Montserrat Airways
+5N;AUL;EN;Nordavia - Regional Airlines
+5O;FPO;EN;Asl Airlines France
+5P;LLX;EN;Small Planet Airlines (Germany)
+5Q;BEA;EN;Best Aviation Ltd
+5R;RUC;EN;Rutaca
+5S;GAK;EN;Global Aviation Services
+5T;MPE;EN;Canadian North
+5U;TGU;EN;Tag
+5V;VTS;EN;Everts Air Alaska
+5W;;EN;Westbahn
+5X;UPS;EN;Ups Airlines
+5Y;GTI;EN;Atlas Air
+5Z;KEM;EN;Cemair
+6A;CHP;EN;Consorcio Aviaxsa_ S.A. De C.V.
+6B;BLX;EN;Tuifly Nordic Ab
+6C;;EN;Air Timor S. A.
+6D;TVQ;EN;Travel Service Slovakia
+6E;IGO;EN;Indigo
+6F;PRW;EN;Primera Air Nordic
+6G;RLX;EN;Go2sky
+6H;ISR;EN;Israir
+6I;MMD;EN;Air Alsie A/S
+6J;SNJ;EN;Solaseed Air
+6K;RIT;EN;Asian Spirit
+6L;;EN;Aklak Air
+6M;MXM;EN;Maximus Airlines
+6N;NIN;EN;Niger Airlines
+6O;OBS;EN;Orbest
+6P;ISG;EN;Club Air S.P.A.
+6Q;SAW;EN;Cham Wings
+6R;TNO;EN;Aerounion
+6S;SGQ;EN;Saudigulf
+6T;AMY;EN;Air Mandalay
+6U;UKR;EN;Air Ukraine
+6V;;EN;Avanza
+6W;SOV;EN;Saratov Airlines
+6Y;ART;EN;Smartlynx
+6Z;EAK;EN;Euro-Asia Air
+7A;XRC;EN;Express Air Cargo
+7B;KJC;EN;Krasnojarsky Airlines
+7C;JJA;EN;Jeju Air
+7D;UDC;EN;Donbassaero_ Utility Enterprise Airline Company
+7E;AWU;EN;Sylt Air
+7F;FAB;EN;First Air
+7G;SFJ;EN;Star Flyer
+7H;RVF;EN;Ravn Alaska
+7I;INC;EN;Inselair
+7J;TJK;EN;Tajik Air
+7K;KGL;EN;Aircompany Kogalymavia Ltd
+7L;AZG;EN;Silk Way West Airlines
+7M;MYI;EN;Mayair
+7N;PWD;EN;Pawa Dominicana
+7O;TVL;EN;Travel Service Hungary
+7P;PST;EN;Air Panama
+7Q;MNU;EN;Elite Airways
+7R;RLU;EN;Rusline
+7S;RYA;EN;Ryan Air
+7T;RTM;EN;Dhl Ecuador
+7U;;EN;Commercial Aviation Services Llc
+7V;FDR;EN;Federal Airlines
+7W;WRC;EN;Windrose Airlines
+7Y;MYP;EN;Mann Yadanarpon Airlines
+7Z;AJI;EN;Ameristar Charters
+8A;BMM;EN;Atlas Blue
+8B;TNU;EN;Transnusa Air Services
+8C;ATN;EN;Ati - Air Transport International
+8D;EXV;EN;Fitsair
+8E;EFX;EN;Easy Fly Express
+8F;CAD;EN;Cardig Air
+8G;MFG;EN;Fly Mid Africa
+8H;BGH;EN;Bh Air
+8I;MYW;EN;My Way Airlines Srl
+8J;ECO;EN;Eco Jet
+8K;KMI;EN;K-Mile Air
+8L;LKE;EN;Lucky Air
+8M;MMA;EN;Myanmar Airways International
+8N;REG;EN;Regional Air Services
+8O;WCG;EN;West Coast Airlines Limited
+8P;PCO;EN;Pacific Coastal Airlines
+8Q;OHY;EN;Onurair
+8R;EDW;EN;Edelweiss Air Ag
+8S;;EN;Turbojet
+8T;;EN;Air Tindi
+8U;AAW;EN;Afriqiyah Airways
+8V;WRT;EN;Wright Air Service
+8W;EDR;EN;Fly Allways
+8Y;AAV;EN;Astro Air International
+8Z;;EN;Congo Airways
+9A;EZX;EN;Eaglexpress Air Charter
+9B;;EN;Accesrail Inc.
+9C;CQH;EN;Spring Airlines
+9D;THE;EN;Toumai Air Tchad
+9E;EDV;EN;Endeavor Air
+9F;;EN;Eurostar International
+9G;;EN;Airport Express Rail
+9H;CGN;EN;Air Changan
+9I;LLR;EN;Alliance Air
+9J;DAN;EN;Dana Air
+9K;KAP;EN;Cape Air
+9L;;EN;Airtanker Services Limited
+9M;GLR;EN;Central Mountain Air
+9N;TOS;EN;Tropic Air
+9P;JAD;EN;Air Arabia Jordan
+9Q;CXE;EN;Caicos Express Airways
+9R;NSE;EN;Satena
+9S;SOO;EN;Southern Air
+9T;;EN;Act Airlines Inc
+9U;MLD;EN;Air Moldova
+9V;ROI;EN;Avior Airlines
+9W;JAI;EN;Jet Airways
+9X;FDY;EN;Southern Airways Express
+A0;MCJ;EN;Avianca Argentina
+A2;AZI;EN;Astra Airlines
+A3;AEE;EN;Aegean Airlines
+A4;;EN;Azimuth
+A5;HOP;EN;Hop!
+A6;OTC;EN;Hongtu Airlines
+A7;CFV;EN;Calafia Airlines
+A8;XAU;EN;Aerolink Uganda
+A9;TGZ;EN;Airzena - Georgian Airways
+AA;AAL;EN;American Airlines
+AB;BER;EN;Air Berlin_ Inc.
+AC;ACA;EN;Air Canada
+AD;AZU;EN;Azul
+AE;MDA;EN;Mandarin Airlines
+AF;AFR;EN;Air France
+AG;GHN;EN;Air Ghana
+AH;DAH;EN;Air Algerie
+AI;AIC;EN;Air India
+AJ;;EN;Aztec Airways
+AK;AXM;EN;Airasia
+AL;ALD;EN;Air Leisure
+AM;AMX;EN;Aeromexico
+AN;WSN;EN;Advanced Air Llc (Hawthorne)
+AO;;EN;Air Juan
+AP;LAV;EN;Alba Star
+AQ;JYH;EN;9 Air
+AR;ARG;EN;Aerolineas Argentinas
+AS;ASA;EN;Alaska Airlines
+AT;RAM;EN;Royal Air Maroc
+ATV;ATV;EN;Avanti Air Gmbh _ Co. Kg_ Burbach
+AU;AUT;EN;Austral Lineas Aereas
+AV;AVA;EN;Avianca
+AW;VNE;EN;Venezolana
+AWZ;AWZ;EN;Airwest
+AX;LOF;EN;Trans States Airlines
+AY;FIN;EN;Finnair
+AZ;AZA;EN;Alitalia
+B0;DJT;EN;La Compagnie
+B2;BRU;EN;Belavia
+B3;BTN;EN;Bhutan Airlines
+B4;TAN;EN;Zanair
+B5;EXZ;EN;Fly-Sax
+B6;JBU;EN;Jetblue Airways
+B7;UIA;EN;Uni Air
+B8;ERT;EN;Eritrean Airlines
+B9;IRB;EN;Iran Airtours
+BA;BAW;EN;British Airways
+BAE;BAE;EN;Bae Systems (Corporate Air Travel) Ltd
+BB;SBS;EN;Seaborne Airlines
+BC;SKY;EN;Skymark Airlines
+BCS;BCS;EN;European Air Transport
+BD;BYC;EN;Cambodia Bayon Airlines
+BE;BEE;EN;Flybe
+BF;FBU;EN;French Bee
+BG;BBC;EN;Biman Bangladesh Airlines
+BH;BML;EN;Bismillah Airlines
+BI;RBA;EN;Royal Brunei Airlines
+BID;BID;EN;Binair Gmbh_ Munchen
+BJ;LBT;EN;Nouvelair
+BK;OKA;EN;Okay Airways
+BL;PIC;EN;Jetstar Pacific
+BM;BMR;EN;Bmi Regional
+BN;;EN;Air Inter Transport Co. Ltd
+BO;BBD;EN;Bluebird Nordic
+BP;BOT;EN;Air Botswana
+BQ;ROM;EN;Aeromar_ C. Por A.
+BR;EVA;EN;Eva Air
+BS;UBG;EN;Us-Bangla Airlines
+BSC;BSC;EN;Bistair - Fez_ Bishkek
+BT;BTI;EN;Airbaltic
+BU;;EN;Caa - Compagnie Africaine Daviation
+BUC;BUC;EN;Bulgarian Air Charter
+BV;BPA;EN;Blue Panorama Airlines
+BW;BWA;EN;Caribbean Airlines
+BX;ABL;EN;Air Busan
+BY;TOM;EN;Tui Airways
+BZ;BDA;EN;Blue Dart Aviation
+C2;CEL;EN;Ceiba Intercontinental
+C3;TDR;EN;Trade Air
+C4;CGK;EN;Click Airways
+C5;UCA;EN;Commutair
+C6;;EN;Canjet Airlines
+C7;CIN;EN;Cinnamon Air
+C8;ICV;EN;Cargolux Italia
+C9;BIC;EN;Alphaland Aviation
+CA;CCA;EN;Air China
+CAI;CAI;EN;Turistik Hava Tasimacilik A.S.
+CB;;EN;Trans Caribbean Air
+CC;OMT;EN;Cm Airlines
+CD;CND;EN;Corendon Dutch Airlines
+CE;CLG;EN;Chalair
+CF;CYZ;EN;China Postal Airlines
+CG;TOK;EN;Png Air
+CH;BMJ;EN;Bemidji Aviation
+CI;CAL;EN;China Airlines
+CJ;CFE;EN;Ba Cityflyer
+CK;CKK;EN;China Cargo Airlines
+CL;CLH;EN;Lufthansa Cityline
+CM;CMP;EN;Copa Airlines
+CN;GDC;EN;Grand China Air
+CO;FCB;EN;Cobalt Air
+CP;CPZ;EN;Compass Airlines
+CQ;CSV;EN;Coastal Aviation
+CS;;EN;Comlux Aruba Nv
+CT;CYL;EN;Alitalia Cityliner
+CU;CUB;EN;Cubana
+CV;CLX;EN;Cargolux
+CW;CCC;EN;Air Cargo Global
+CX;CPA;EN;Cathay Pacific
+CY;CYP;EN;Cyprus Airways
+CZ;CSN;EN;China Southern Airlines
+D0;DHK;EN;Dhl Air
+D2;SSF;EN;Severstal Aircompany
+D3;;EN;Daallo Airlines
+D4;DAT;EN;Dart Airlines
+D5;DAE;EN;Dhl Aero Expreso
+D7;XAX;EN;Airasia X
+D8;IBK;EN;Norwegian Air International
+D9;;EN;Dena Airways
+DB;BZH;EN;Britair S.A.
+DC;BRX;EN;Braathens Regional Airways
+DCS;DCS;EN;Daimler Chrysler Aviation Gmbh_ Stuttgart
+DD;NOK;EN;Nok Air
+DE;CFG;EN;Condor
+DF;;EN;Condor Berlin
+DG;SRQ;EN;Cebgo
+DH;NAN;EN;Norwegian Air Norway
+DI;NRS;EN;Norwegian Air Uk
+DJ;WAJ;EN;Airasia Japan
+DK;VKG;EN;Thomas Cook Airlines Scandinavia
+DL;DAL;EN;Delta Air Lines
+DM;;EN;Anda Air Limited
+DN;;EN;Norwegian Air Argentina
+DNV;DNV;EN;Aeroflot-Don_ Joint-Stock Company
+DO;RVL;EN;Airvallee S.P.A.-Services Aeriens Du Val D_aoste
+DP;PBD;EN;Pobeda
+DQ;CXT;EN;Coastal Air Transport (Christiansted_ St. Croix)
+DR;RLH;EN;Ruili Airlines
+DS;EZS;EN;Easyjet Switzerland
+DSC;DSC;EN;Addis Air Cargo Services P.L.C.
+DT;DTA;EN;Taag Angola Airlines
+DU;LIZ;EN;Sky Jet
+DV;VSV;EN;Scat
+DW;;EN;Dominican Wings S.A.
+DX;DTR;EN;Dat - Danish Air Transport
+DY;NAX;EN;Norwegian
+DZ;EPA;EN;Donghai Airlines
+E2;EWE;EN;Eurowings Europe
+E3;VGO;EN;Newgen Airways
+E4;ENT;EN;Enter Air
+E5;RBG;EN;Air Arabia Egypt
+E6;EWL;EN;Eurowings Europe Limited
+E7;ESF;EN;Estafeta Carga Aerea
+E8;GTA;EN;City Airways
+E9;EVE;EN;Evelop Airlines
+EA;EAL;EN;European Air Express Luftverkehrsgesellschaft Mbh_ Monchengladba
+EB;PLM;EN;Wamos Air
+EC;BOS;EN;Openskies
+ED;AXE;EN;Airexplore
+EE;;EN;Regional Jet
+EF;FEA;EN;Far Eastern Air Transport Corporation
+EG;ERN;EN;Ernest Airlines
+EH;AKX;EN;Ana Wings
+EI;EIN;EN;Aer Lingus
+EJ;NEA;EN;New England Airlines_ Inc. (Westerly_ Ri)
+EK;UAE;EN;Emirates Airline
+EL;ELB;EN;Ellinair
+EM;CFS;EN;Empire Airlines
+EN;DLA;EN;Air Dolomiti
+EO;;EN;Air Go
+EP;IRC;EN;Iran Aseman Airlines
+EQ;TAE;EN;Tame
+ER;SEP;EN;Serene Air
+ES;ETR;EN;Aerolineas Estelar
+ET;ETH;EN;Ethiopian Airlines
+EU;UEA;EN;Chengdu Airlines
+EV;ASQ;EN;Expressjet Airlines
+EW;EWG;EN;Eurowings
+EX;SDO;EN;Aerolineas Santo Domingo_ S.A.
+EXN;EXN;EN;Exin
+EXT;EXT;EN;Night Express_ Frankfurt
+EY;ETD;EN;Etihad Airways
+EZ;SUS;EN;Sun-Air Of Scandinavia
+EZS;EZS;EN;Easy Jet Switzerland Sa
+EZY;EZY;EN;Easyjet Airlines Co. Ltd
+F2;XLK;EN;Safarilink Aviation
+F3;FAD;EN;Flyadeal
+F4;WAF;EN;Air Flamenco
+F5;ATG;EN;Aerotranscargo
+F6;FXP;EN;Flyvalan
+F7;BBO;EN;Flybaboo Sa
+F8;FLE;EN;Flair Airlines
+F9;FFT;EN;Frontier Airlines
+FA;SFR;EN;Safair
+FAH;FAH;EN;Farnair Hungary Ltd
+FB;LZB;EN;Bulgaria Air
+FC;VVC;EN;Vivacolombia
+FD;AIQ;EN;Thai Airasia
+FE;FEA;EN;Far Eastern Air Transport
+FG;AFG;EN;Ariana Afghan Airlines
+FH;FHY;EN;Freebird Airlines
+FHE;FHE;EN;Hello Ag
+FI;ICE;EN;Icelandair
+FJ;FJI;EN;Fiji Airways
+FJE;FJE;EN;Flyjet Ltd
+FK;KFA;EN;Kf Aerospace
+FL;;EN;Airtran Airways
+FM;CSH;EN;Shanghai Airlines
+FN;FTZ;EN;Fastjet Tanzania
+FO;;EN;Flybondi
+FP;;EN;Pelican Airlines
+FPO;FPO;EN;Europe Airpost
+FQ;;EN;Fenix Airways
+FR;RYR;EN;Ryanair
+FS;FGG;EN;Flyglobal Charter Sdn Bhd
+FT;FEG;EN;Flyegypt
+FU;FZA;EN;Fuzhou Airlines
+FUA;FUA;EN;Futura International
+FV;SDM;EN;Rossiya Airlines
+FW;IBX;EN;Ibex Airlines
+FX;FDX;EN;Fedex
+FY;FFM;EN;Firefly
+FZ;FDB;EN;Flydubai
+G0;GHB;EN;Ghana International Airlines Limited
+G2;;EN;Galeyr Airline
+G3;GLO;EN;Gol
+G4;AAY;EN;Allegiant Air
+G5;HXA;EN;China Express Airlines
+G6;GWR;EN;Gowair
+G7;GJS;EN;Gojet Airlines
+G8;GOW;EN;Goair
+G9;ABY;EN;Air Arabia
+GA;GIA;EN;Garuda Indonesia
+GAF;GAF;EN;German Air Force
+GB;ABX;EN;Abx Air
+GC;;EN;Global Feeder Services
+GD;AHA;EN;Air Alpha A/S
+GE;GBB;EN;Global Aviation Operations
+GF;GFA;EN;Gulf Air
+GG;KYE;EN;Sky Lease Cargo
+GH;GLP;EN;Globus
+GI;LHA;EN;Longhao Airlines
+GJ;CDC;EN;Loong Air
+GK;JJP;EN;Jetstar Japan
+GL;GRL;EN;Air Greenland
+GM;TMG;EN;Tri Mg Airlines
+GN;AGN;EN;Compagnie Nationale Air Gabon
+GO;;EN;Uls Airlines Cargo
+GP;RIV;EN;Apg Airlines
+GQ;SEH;EN;Sky Express
+GR;AUR;EN;Aurigny Air Services
+GS;GCR;EN;Tianjin Airlines
+GT;CGH;EN;Air Guilin
+GU;GUG;EN;Aviateca
+GV;GUN;EN;Grant Aviation
+GW;;EN;Go Fly Llc.
+GX;CBG;EN;Gx Airlines
+GY;CGZ;EN;Colorful Guizhou Airlines
+GZ;;EN;Air Rarotonga
+GZA;GZA;EN;Excellent Air Gmbh_ Stadtlohn
+H1;;EN;Hahn Air Systems
+H2;SKU;EN;Sky Airline
+H3;;EN;Air Berlin Aviation Gmbh
+H4;;EN;Raven Air Llc Dba Island Hoppers
+H5;MVL;EN;Magadan Airlines
+H6;HAG;EN;Hageland Aviation
+H7;TRV;EN;Taron-Avia
+H8;KHB;EN;Dalavia_ Federal State Unitary Enterprise
+H9;HIM;EN;Himalaya Airlines
+HA;HAL;EN;Hawaiian Airlines
+HB;AAQ;EN;Asia Atlantic Airlines
+HC;ATI;EN;Aero-Tropics Air Services
+HD;ADO;EN;Air Do
+HE;LGW;EN;Lgw
+HF;VRE;EN;Air Cote Divoire
+HG;NLY;EN;Niki
+HH;TBN;EN;Taban Airlines
+HHI;HHI;EN;Hamburg International Luftverkehrsgesellschaft Mbh Ig_ Hamburg
+HI;;EN;Papillon Airways
+HJ;TMN;EN;Tasman Cargo Airlines
+HK;;EN;Skippers Aviation
+HLX;HLX;EN;Hapag Lloyd Express Gmbh_ Langenhagen
+HM;SEY;EN;Air Seychelles
+HN;HVY;EN;Heavylift Cargo Airlines Pty. Ltd
+HO;DKH;EN;Juneyao Airlines
+HP;APF;EN;Amapola Flyg
+HQ;;EN;Thomas Cook Airlines Belgium N.V
+HR;HHN;EN;Hahn Air
+HS;HLI;EN;Heli Securite
+HT;AHW;EN;Aeromist-Kharkiv Ltd
+HU;CHH;EN;Hainan Airlines
+HV;TRA;EN;Transavia Airlines
+HW;NWL;EN;North Wright Airways
+HX;CRK;EN;Hong Kong Airlines
+HY;UZB;EN;Uzbekistan Airways
+HZ;SHU;EN;Aurora
+I2;IBS;EN;Iberia Express
+I3;;EN;Ata Airlines
+I4;RSY;EN;Ifly
+I5;IAD;EN;Airasia (India)
+I6;SEQ;EN;Sky Eyes Co._ Ltd
+I7;IIA;EN;Intair Iles
+I8;IZA;EN;Izhavia
+I9;;EN;Air Italy
+IA;IAW;EN;Iraqi Airways
+IB;IBE;EN;Iberia
+IC;IAC;EN;Indian Airlines Corporation
+ID;BTK;EN;Batik Air
+IE;SOL;EN;Solomon Airlines
+IF;TSU;EN;Gulf & Caribbean Cargo
+IG;ISS;EN;Meridiana
+IH;FCN;EN;Falcon Air Ab
+II;CSQ;EN;Ibc Airways
+IJ;SJO;EN;Spring Airlines Japan
+IK;KAR;EN;Llc Ikar Pegas Fly
+IL;TGN;EN;Trigana Air
+IM;JPJ;EN;Jupiter Jet
+IN;LKN;EN;Nam Air
+IO;IAE;EN;Iraero
+IP;JOL;EN;Atyrau Aue Joly
+IQ;;EN;Qazaq Air
+IR;IRA;EN;Iran Air
+IS;;EN;Ais Airlines
+ISR;ISR;EN;Israir Ltd
+IT;TTW;EN;Tigerair Taiwan
+IU;CSW;EN;Sw Italia
+IV;;EN;Cardiff Aviation Malta
+IW;WON;EN;Wings Air
+IX;AXB;EN;Air India Express
+IY;IYE;EN;Yemenia
+IZ;AIZ;EN;Arkia
+J0;JLX;EN;Jetlink Express Limited
+J1;;EN;Onejet
+J2;AHY;EN;Azerbaijan Airlines
+J3;PLR;EN;Northwestern Air
+J4;BDR;EN;Badr Airlines
+J5;;EN;Alaska Seaplanes
+J6;;EN;Seawings
+J7;ABS;EN;Afrijet Business Service
+J8;BVT;EN;Berjaya Air
+J9;JZR;EN;Jazeera Airways
+JA;JAT;EN;Jetsmart
+JB;;EN;Helijet International Inc
+JC;JAC;EN;Japan Air Commuter
+JD;CBJ;EN;Capital Airlines
+JE;MNO;EN;Mango
+JEM;JEM;EN;Emerald Airways Limited
+JF;JAA;EN;Jet Asia Airways
+JG;JGO;EN;Jetgo Australia
+JH;FDA;EN;Fuji Dream Airlines
+JI;MRJ;EN;Meraj Air
+JJ;TAM;EN;Latam Airlines Brazil
+JL;JAL;EN;Japan Airlines
+JM;JMA;EN;Jambo Jet
+JN;JON;EN;Joon
+JO;RYW;EN;Royal Wings
+JP;ADR;EN;Adria Airways
+JQ;JST;EN;Jetstar
+JR;JOY;EN;Joy Air
+JS;KOR;EN;Air Koryo
+JT;LNI;EN;Lion Air
+JU;ASL;EN;Air Serbia
+JV;BLS;EN;Bearskin Airlines
+JW;VNL;EN;Vanilla Air
+JX;;EN;Dac Aviation East Africa
+JY;IWY;EN;Intercaribbean Airways
+JZ;JUB;EN;Jubba Airways (Somalia)
+K2;;EN;Yute Commuter Service
+K3;TQN;EN;Taquan Air
+K4;CKS;EN;Kalitta Air
+K5;SLR;EN;Silverstone Air Services
+K6;KHV;EN;Cambodia Angkor Air
+K7;KBZ;EN;Air Kbz
+K8;KND;EN;Kan Air
+K9;KFS;EN;Kalitta Charters
+KA;HDA;EN;Cathay Dragon
+KB;DRK;EN;Druk Air
+KC;KZR;EN;Air Astana
+KD;WGN;EN;Western Global
+KE;KAL;EN;Korean Air
+KF;;EN;Air Belgium
+KG;LYM;EN;Key Lime Air
+KH;AAH;EN;Aloha Air Cargo
+KI;SSJ;EN;Krasavia
+KJ;AIH;EN;Air Incheon
+KK;KKK;EN;Atlasglobal
+KL;KLM;EN;Klm Royal Dutch Airlines
+KM;AMC;EN;Air Malta
+KN;CUA;EN;China United Airlines
+KO;KMA;EN;Komiaviatrans
+KP;SKK;EN;Asky
+KQ;KQA;EN;Kenya Airways
+KR;KHA;EN;Kitty Hawk Aircargo_ Inc. (Dallas-Ft. Worth_ Tx)
+KS;NLA;EN;Penair
+KT;;EN;Fly Kiss
+KU;KAC;EN;Kuwait Airways
+KV;SKV;EN;Sky Regional Airlines Inc
+KW;KEA;EN;Korea Express Air
+KX;CAY;EN;Cayman Airways
+KY;KNA;EN;Kunming Airlines
+KZ;NCA;EN;Nippon Cargo Airlines
+L2;LYC;EN;Lynden Air Cargo
+L3;JOS;EN;Dhl De Guatemala
+L4;LDI;EN;Lauda Air Italy
+L5;LTR;EN;Lufttransport A/S
+L6;MAI;EN;Mauritania Airlines International
+L7;LAE;EN;Latam Cargo Colombia
+L8;LXG;EN;Air Luxor Gb
+L9;BTZ;EN;Bristow Us Llc
+LA;LAN;EN;Latam Airlines Chile
+LB;LEP;EN;Air Costa
+LC;VLO;EN;Varig Logistica S.A.
+LD;AHK;EN;Air Hong Kong
+LE;;EN;Lion Air Cargo Tanzania
+LF;VTE;EN;Contour Aviation
+LG;LGL;EN;Luxair
+LH;DLH;EN;Lufthansa
+LH;GEC;EN;Lufthansa Cargo
+LI;LIA;EN;Liat
+LJ;JNA;EN;Jin Air
+LK;LLL;EN;Lao Skyway
+LL;BSK;EN;Miami Air International
+LM;LOG;EN;Loganair
+LN;LAA;EN;Libyan Airlines
+LO;LOT;EN;Lot Polish Airlines
+LP;LPE;EN;Latam Airlines Peru
+LQ;MKR;EN;Lanmei Airlines
+LR;LRC;EN;Avianca Costa Rica
+LS;EXS;EN;Jet2
+LT;SNG;EN;Longjiang Airlines
+LU;;EN;Lanexpress
+LV;LBC;EN;Albanian Airlines Mak S.H.P.K.
+LW;JMR;EN;Latin American Wings
+LX;SWR;EN;SWISS
+LY;ELY;EN;El Al
+LZ;SWU;EN;Swiss Global Air Lines
+M0;MNG;EN;Aero Mongolia
+M2;MHV;EN;Mhs Aviation
+M3;LTG;EN;Latam Cargo Brazil
+M4;MSA;EN;Mistral Air
+M5;KEN;EN;Kenmore Air
+M6;AJT;EN;Amerijet International
+M7;MAA;EN;Latam Cargo
+M8;MSJ;EN;Skyjet
+M9;MSI;EN;Motor Sich Airlines
+MA;MAH;EN;Malev - Hungarian Airlines
+MB;MNB;EN;Mng Airlines
+MC;;EN;Air Mobility Command
+MD;MDG;EN;Air Madagascar
+ME;MEA;EN;Middle East Airlines
+MF;CXA;EN;Xiamen Airlines
+MG;;EN;Eznis Airways Llc
+MH;MAS;EN;Malaysia Airlines
+MI;SLK;EN;Silkair
+MJ;;EN;Myway Airlines Co.Ltd
+MK;MAU;EN;Air Mauritius
+ML;MGE;EN;Aero-Micronesia_ Inc. D/B/A Asia Pacific Airlines (Danville_ Ca)
+MM;APJ;EN;Peach
+MN;CAW;EN;Comair (South Africa)
+MO;CAV;EN;Calm Air
+MP;MPH;EN;Martinair
+MQ;ENY;EN;Envoy Air
+MR;MML;EN;Hunnu Air
+MS;MSR;EN;Egyptair
+MT;TCX;EN;Thomas Cook Airlines
+MU;CES;EN;China Eastern Airlines
+MV;MAR;EN;Air Mediterranean
+MW;MHO;EN;Mokulele Airlines
+MX;MXA;EN;Compania Mexicana De Aviacion_ S.A.
+MY;MWG;EN;Maswings
+MZ;AHX;EN;Amakusa Airlines
+N2;JCT;EN;Jet Charter Inc
+N3;OMS;EN;Omskavia Airline_ Public Joint-Stock Society
+N4;NWS;EN;Nordwind Airlines
+N5;NRL;EN;Nolinor Aviation
+N6;ACQ;EN;Nuevo Continente S.A.
+N7;NEP;EN;Neptune Air
+N8;NCR;EN;National Airlines
+N9;NVR;EN;Novair
+NA;NSS;EN;Nesma Airlines (Saudi Arabia)
+NB;EAN;EN;Skypower Express Airways
+NC;NAC;EN;Northern Air Cargo
+ND;FMI;EN;Fmi Air Charter
+NE;NMA;EN;Nesma Airlines
+NF;AVN;EN;Air Vanuatu
+NG;NAD;EN;Al Naser Wings Airlines
+NH;ANA;EN;Ana-All Nippon Airways
+NI;PGA;EN;Portugalia Airlines
+NJ;;EN;Niger Airways
+NJE;NJE;EN;Netjets_ Transportes Aereos S.A.
+NK;NKS;EN;Spirit Airlines
+NL;SAI;EN;Shaheen Air International
+NM;DRD;EN;Air Madrid Lineas Aereas_ S.A.
+NN;MOV;EN;Vim Airlines
+NO;NOS;EN;Neos
+NP;NIA;EN;Nile Air
+NQ;AJX;EN;Air Japan
+NR;;EN;Al-Naser Airlines
+NRD;NRD;EN;Nordic Nr Regional Ab
+NS;HBH;EN;Hebei Airlines
+NT;IBB;EN;Binter Canarias
+NU;JTA;EN;Japan Transocean Air
+NV;IRG;EN;Karun Air
+NW;NWA;EN;Northwest Orient Airlines Inc.
+NX;AMU;EN;Air Macau
+NY;FXI;EN;Air Iceland Connect
+NZ;ANZ;EN;Air New Zealand
+O2;HPN;EN;Linear Air
+O3;CSS;EN;Sf Airlines
+O4;;EN;Antrak Air
+O6;ONE;EN;Avianca Brazil
+O7;ORG;EN;Orenburzhie Aircompany
+O9;NOV;EN;Nova Airways
+OA;OAL;EN;Olympic Air
+OB;BOV;EN;Boa
+OC;ORC;EN;Oriental Air Bridge
+OD;MXD;EN;Malindo Air
+OE;LDM;EN;Laudamotion Gmbh
+OF;OLA;EN;Overland Airways
+OH;JIA;EN;Psa Airlines
+OHY;OHY;EN;Onur Hava Tasimacilik Awms
+OI;HND;EN;Hinterland Aviation
+OJ;FJM;EN;Fly Jamaica
+OK;CSA;EN;Czech Airlines
+OL;PAO;EN;Samoa Airways
+OM;MGL;EN;Miat - Mongolian Airlines
+ON;RON;EN;Nauru Airlines
+OO;SKW;EN;Skywest Airlines
+OP;CHK;EN;Flying Boat_ Inc. D/B/A Chalks International  Airlines (Ft. Laud
+OQ;CQN;EN;Chongqing Airlines
+OR;TFL;EN;Tui Airlines Nederland
+OS;AUA;EN;Austrian
+OT;PEL;EN;Aeropelican Air Services Pty Ltd
+OU;CTN;EN;Croatia Airlines
+OV;OMS;EN;Salamair
+OW;SEW;EN;Skyward International Aviation
+OX;OEA;EN;Orient Thai Airlines
+OY;OAE;EN;Omni Air International
+OZ;AAR;EN;Asiana Airlines
+P0;PFZ;EN;Proflight Zambia
+P1;;EN;Publiccharters.Com
+P2;XAK;EN;Airkenya Aviation
+P3;CLU;EN;Cargologicair
+P4;APK;EN;Air Peace
+P5;RPB;EN;Copa Airlines Colombia
+P6;PVG;EN;Privilege Style
+P7;LLP;EN;Small Planet Airlines (Poland)
+P8;SRN;EN;Sprintair
+P9;PVN;EN;Peruvian Air Line
+PA;ABQ;EN;Airblue
+PB;SPR;EN;Pal Airlines
+PC;PGT;EN;Pegasus
+PD;POE;EN;Porter Airlines
+PE;PEV;EN;Peoples Vienna Line
+PF;PRI;EN;Primera Air Scandinavia
+PG;BKP;EN;Bangkok Airways
+PGT;PGT;EN;Pegasus Hava Tasimaciligi A.S. (Pegasus)
+PH;PHA;EN;Phoenix Air Group
+PI;RKA;EN;Polar Airlines
+PJ;SPM;EN;Air Saint-Pierre
+PK;PIA;EN;Pakistan International Airlines
+PL;SOA;EN;Southern Air Charter
+PM;PSK;EN;Prescott
+PN;CHB;EN;West Air (China)
+PO;PAC;EN;Polar Air Cargo
+PP;PJS;EN;Jet Aviation Business Jets
+PQ;PNF;EN;Panafrican Airways
+PR;PAL;EN;Philippine Airlines
+PS;AUI;EN;Ukraine International Airlines
+PT;PDT;EN;Piedmont Airlines
+PU;PUE;EN;Plus Ultra
+PV;SBU;EN;St Barth Commuter
+PW;PRF;EN;Precision Air
+PX;ANG;EN;Air Niugini
+PY;SLM;EN;Surinam Airways
+PZ;LAP;EN;Latam Airlines Paraguay
+Q2;DQA;EN;Maldivian
+Q3;AXL;EN;Anguilla Air Services
+Q4;SWX;EN;Swazi Express Airways
+Q5;;EN;40 Mile Air
+Q6;VOC;EN;Volaris Costa Rica
+Q7;SBM;EN;Sky Bahamas
+Q8;TSG;EN;Trans Air Congo
+Q9;WAN;EN;Wataniya Airways
+QA;;EN;Cimber A/S
+QB;QSM;EN;Qeshm Airlines
+QC;CRC;EN;Camair-Co
+QD;JCC;EN;Jc International Airlines
+QE;EFA;EN;Express Freighters Australia
+QF;QFA;EN;Qantas
+QG;CTV;EN;Citilink Indonesia
+QH;LYN;EN;Air Kyrgyzstan
+QI;CIM;EN;Cimber Air A/S
+QJ;;EN;Jet Airways Inc.
+QK;JZA;EN;Jazz
+QL;LER;EN;Laser
+QM;;EN;Monacair
+QN;ARR;EN;Air Armenia
+QO;;EN;Quikjet Cargo Airlines
+QP;;EN;Starlight Airlines
+QQ;UTY;EN;Alliance Airlines
+QR;QTR;EN;Qatar Airways
+QS;TVS;EN;Travel Service Airlines
+QT;TPA;EN;Avianca Cargo
+QU;UTN;EN;Azur Air Ukraine
+QV;LAO;EN;Lao Airlines
+QW;QDA;EN;Qingdao Airlines
+QX;QXE;EN;Horizon Air
+QY;BCS;EN;European Air Transport
+QZ;AWQ;EN;Indonesia Airasia
+R2;GTS;EN;Groupe Transair
+R3;SYL;EN;Yakutia Airlines
+R4;SDM;EN;State Transport Company _russia_
+R5;JAV;EN;Jordan Aviation
+R6;DNU;EN;Dot Lt
+R7;OCA;EN;Aserca Airlines
+R8;SUV;EN;Sundance Air (Venezuela)
+R9;SSB;EN;Suasa Airlines
+RA;RNA;EN;Nepal Airlines
+RB;SYR;EN;Syrianair
+RC;FLI;EN;Atlantic Airways (Faroe Islands)
+RD;LKH;EN;Small Planet Airlines (Cambodia)
+RE;STK;EN;Stobart Air
+RF;;EN;Florida West International Airways Inc.
+RG;RJD;EN;Rotana Jet
+RGN;RGN;EN;Cygnus Air_ S.A.
+RH;HKC;EN;Hong Kong Air Cargo
+RI;MDL;EN;Mandala Airlines Pt
+RJ;RJA;EN;Royal Jordanian
+RK;;EN;Skyview Airways Co Dba Skyview
+RL;ABG;EN;Royal Flight
+RM;NGT;EN;Armenia
+RN;EUH;EN;Air Horizons
+RO;ROT;EN;Tarom
+RP;BPS;EN;Base
+RQ;KMF;EN;Kam Air
+RR;RFR;EN;Royal Air Force
+RS;ASV;EN;Air Seoul
+RT;UVT;EN;Uvt Aero
+RU;ABW;EN;Airbridgecargo
+RV;ROU;EN;Air Canada Rouge
+RW;;EN;Royal Air Charter Services Inc
+RX;RGE;EN;Regent Airways
+RY;CJX;EN;Jiangxi Air
+RZ;LRS;EN;Sansa
+S0;NSO;EN;Aerolineas Sosa
+S2;;EN;Jetkonnect
+S3;BBR;EN;Santa Barbara Airlines_ C.A.
+S4;RZO;EN;Azores Airlines
+S5;LLC;EN;Small Planet Airlines (Lithuania)
+S6;KSZ;EN;Sunrise Airways
+S7;SBI;EN;S7 Airlines
+S8;AHW;EN;Sky Capital Airlines
+S9;URS;EN;Silk Road Cargo Business
+SA;SAA;EN;South African Airways
+SB;ACI;EN;Air Calin
+SC;CDG;EN;Shandong Airlines
+SD;SUD;EN;Sudan Airways
+SE;XLF;EN;Xl Airways France
+SF;DTH;EN;Tassili Airlines
+SG;SEJ;EN;Spicejet
+SH;;EN;Sharp Airlines
+SHY;SHY;EN;Sky Airlines
+SI;SPA;EN;Sierra Pacific Airlines
+SJ;SJY;EN;Sriwijaya Air
+SK;SAS;EN;Sas
+SL;TLM;EN;Thai Lion Air
+SM;MSC;EN;Air Cairo
+SN;BEL;EN;Brussels Airlines
+SO;;EN;Apex Airlines
+SP;SAT;EN;Sata Air Acores
+SQ;SIA;EN;Singapore Airlines
+SR;;EN;Sundair
+SRR;SRR;EN;Star Air I/S
+SS;CRL;EN;Corsair
+ST;GMI;EN;Germania
+SU;AFL;EN;Aeroflot Russian Airlines
+SV;SVA;EN;Saudia
+SVA;SVA;EN;Saudi Arabian Airlines
+SW;NMB;EN;Air Namibia
+SX;SRK;EN;Skywork Airlines
+SY;SCX;EN;Sun Country Airlines
+SZ;SMR;EN;Somon Air
+T0;TPU;EN;Avianca Peru
+T2;FLB;EN;Flyart
+T3;EZE;EN;Eastern Airways
+T4;;EN;Rhoades Aviation Inc.
+T5;TUA;EN;Turkmenistan Airlines
+T6;;EN;Airswift
+T7;TJT;EN;Twin Jet
+T8;MCS;EN;Mcs Aero Carga
+T9;VTU;EN;Turpial Airlines
+TA;TAI;EN;Avianca El Salvador
+TAY;TAY;EN;Tnt Airways S.A.
+TB;JAF;EN;Tui Fly
+TC;ATC;EN;Air Tanzania
+TD;LUR;EN;Atlantis European Airways
+TE;IGA;EN;Skytaxi
+TF;SCW;EN;Bra-Braathens Regional Airlines
+TG;THA;EN;Thai Airways International
+TH;RMY;EN;Raya Airways
+TI;TWI;EN;Tailwind Airlines
+TJ;GPD;EN;Tradewind Aviation
+TK;THY;EN;Turkish Airlines
+TL;ANO;EN;Airnorth
+TM;LAM;EN;Linhas Aereas De Mocambique
+TN;THT;EN;Air Tahiti Nui
+TO;TVF;EN;Transavia France
+TP;TAP;EN;Tap Air Portugal
+TQ;TDM;EN;Tandem Aero
+TR;TGW;EN;Scoot
+TS;TSC;EN;Air Transat
+TT;;EN;Tigerair Australia
+TU;TAR;EN;Tunisair
+TV;TBA;EN;Tibet Airlines
+TW;TWB;EN;Tway Air
+TWJ;TWJ;EN;Twinjet Aircraft Sales Ltd
+TX;FWI;EN;Air Caraibes
+TY;TPC;EN;Air Caledonie
+TZ;AMT;EN;American Trans Air_ Inc.
+U2;EZY;EN;Easyjet
+U3;SAY;EN;Sky Gates Airlines
+U4;BHA;EN;Buddha Air
+U5;KRN;EN;Karinou Airlines
+U6;SVR;EN;Ural Airlines
+U7;UCG;EN;Uniworld Air Cargo
+U8;CYF;EN;Tus Airways
+U9;TAK;EN;Aircompany Tatarstan_ Ojsc
+UA;UAL;EN;United Airlines
+UB;UBA;EN;Myanmar National Airlines
+UC;LCO;EN;Latam Cargo Chile
+UCR;UCR;EN;Aero-Charter Ukraine Ltd
+UD;HER;EN;Hex_air
+UE;UJC;EN;Ultimate Jetcharters
+UF;UKM;EN;Ukraine Mediterranean Airlines Ltd
+UG;TUX;EN;Tunisair Express
+UH;UJX;EN;Atlasglobal Ukraine
+UI;AUK;EN;Auric Air
+UJ;LMU;EN;Almasria Universal Airlines
+UK;VTI;EN;Vistara
+UL;ALK;EN;Srilankan Airlines
+UM;AZW;EN;Air Zimbabwe
+UN;TSO;EN;Transaero Airlines
+UO;HKE;EN;Hk Express
+UP;BHS;EN;Bahamasair
+UQ;CUH;EN;Urumqi Airlines
+US;USA;EN;Us Airways (Pittsburgh_ Pa)
+UT;UTA;EN;Utair
+UU;REU;EN;Air Austral
+UV;;EN;Universal Airways Inc.
+UW;UTP;EN;Uni-Top Airlines
+UX;AEA;EN;Air Europa
+UY;SPD;EN;Sky Prime Aviation Services
+UZ;BRQ;EN;Buraq Air
+V0;VCV;EN;Conviasa
+V2;;EN;Avialeasing Aviation Co
+V3;KRP;EN;Carpatair
+V4;VES;EN;Vieques Air Link
+V5;DAP;EN;Aerovias Dap
+V6;VIL;EN;Vi Airlink
+V7;VOE;EN;Volotea
+V8;VAS;EN;Atran
+V9;VAA;EN;Van Air Europe
+VA;VOZ;EN;Virgin Australia
+VAS;VAS;EN;Atran-Aviatrans Cargo Airlines
+VB;VIV;EN;Vivaaerobus
+VC;;EN;Viaair
+VD;BBB;EN;Swedjet Airways Ab
+VDA;VDA;EN;Volga-Dnepr
+VE;EFY;EN;Easyfly
+VF;FVK;EN;Flyviking
+VH;ALV;EN;Alas De Venezuela
+VI;VDA;EN;Volga-Dnepr Airlines
+VIM;VIM;EN;Air Via
+VJ;VJC;EN;Vietjet Air
+VK;VGN;EN;Virgin Nigeria
+VLM;VLM;EN;Vlaamse Luchttransportmaatschappij N.V.
+VM;NGL;EN;Maxair
+VN;HVN;EN;Vietnam Airlines
+VO;WLM;EN;Vlm Airlines Slovenia
+VP;VQI;EN;Flyme
+VQ;NVQ;EN;Novoair
+VR;TCV;EN;Tacv - Cabo Verde Airlines
+VS;VIR;EN;Virgin Atlantic Airways
+VT;VTA;EN;Air Tahiti
+VU;;EN;Veca Airlines
+VV;VPE;EN;Viva Air Peru
+VW;TAO;EN;Aeromar Airlines
+VX;VRD;EN;Virgin America
+VY;VLG;EN;Vueling Airlines
+VZ;TVJ;EN;Thai Vietjet Air
+W1;;EN;World Ticket Ltd
+W2;FXT;EN;Flexflight
+W3;ARA;EN;Arik Air
+W4;LCB;EN;Lc Peru
+W5;IRM;EN;Mahan Air
+W6;WZZ;EN;Wizz Air
+W7;WLB;EN;Wings Of Lebanon
+W8;CJT;EN;Cargojet Airways
+WA;KLC;EN;Klm Cityhopper
+WB;RWD;EN;Rwandair
+WC;ISV;EN;Avianca Honduras
+WD;MWM;EN;Modern Logistics
+WE;THD;EN;Thai Smile
+WF;WIF;EN;Wideroe
+WG;SWG;EN;Sunwing Airlines
+WH;CNW;EN;China Northwest Airlines
+WI;WHT;EN;White
+WJ;LAL;EN;Labrador Airways Ltd.
+WK;EDW;EN;Edelweiss Air
+WL;WAL;EN;World Atlantic Airlines
+WM;WIA;EN;Winair (Saint Maarten)
+WN;SWA;EN;Southwest Airlines
+WO;WOA;EN;World Airways Inc.
+WQ;SWQ;EN;Swift Air
+WR;WEN;EN;Westjet Encore
+WS;WJA;EN;Westjet
+WT;SWT;EN;Swiftair
+WU;JWX;EN;Jetways Airlines
+WV;;EN;Aero Vip
+WW;WOW;EN;Wow Air
+WX;BCY;EN;Cityjet
+WY;OMA;EN;Oman Air
+WZ;RWZ;EN;Red Wings Airlines
+X3;TUI;EN;Tuifly
+X4;;EN;Air Excursions Llc
+X5;OVA;EN;Air Europa Express
+X8;;EN;Airmax Cargo S.A
+X9;NVD;EN;Avion Express
+XA;XAA;EN;Aeronautical Radio_ Inc. (Arinc)
+XB;IAT;EN;International Air Transport Association (Iata)
+XC;CAI;EN;Corendon Airlines
+XD;ATA;EN;Air Transport Association Of America (Washington_ Dc)
+XE;JSX;EN;Jetsuitex Air
+XF;VLK;EN;Vladivostok Air
+XG;SXD;EN;Sunexpress Germany
+XI;XXI;EN;Aeronautical Telecommunications Ltd (Jamaica)
+XJ;TAX;EN;Thai Airasia X
+XK;CCM;EN;Air Corsica
+XL;LNE;EN;Latam Airlines Ecuador
+XM;IMX;EN;Zimex Aviation
+XN;XAR;EN;Express Air
+XO;SGD;EN;South East Asian Airlines (Seair)
+XP;CXP;EN;Xtra Airways
+XQ;SXS;EN;Sunexpress
+XR;CXI;EN;Corendon Airlines Europe
+XS;SIT;EN;Sita - Societe Internationale De Telecommunications  Aeronautiqu
+XT;IDX;EN;Indonesia Airasia Extra
+XU;AXK;EN;African Express Airways
+XV;IVW;EN;Ivoire Airways
+XW;NCT;EN;Nokscoot
+XY;KNE;EN;Flynas
+XZ;EXY;EN;Sa Express
+Y2;CEY;EN;Acsa - Air Century
+Y4;VOI;EN;Volaris
+Y5;GMR;EN;Golden Myanmar Airlines
+Y6;KHM;EN;Cambodia Airlines
+Y7;TYA;EN;Taimyr Air - Nordstar
+Y8;YZR;EN;Suparna Airlines
+Y9;;EN;Kish Air
+YB;BRJ;EN;Borajet
+YC;LLM;EN;Yamal Airlines
+YD;SYG;EN;Synergy Aviation Ltd (Uk)
+YE;ANR;EN;Yanair
+YG;HYT;EN;Yto Express Airlines
+YH;AYG;EN;Yangon Airways
+YI;RSI;EN;Air Sunshine Inc  (Ft. Lauderdale_ Fl)
+YJ;AWM;EN;Asian Wings Airways
+YK;AVJ;EN;Avia Traffic Company
+YL;LWA;EN;Libyan Wings
+YM;MGX;EN;Montenegro Airlines
+YN;CRQ;EN;Air Creebec
+YO;;EN;Heli Air Monaco
+YP;PAG;EN;Perimeter
+YQ;LCT;EN;Tar Aerolineas
+YR;;EN;Scenic Airlines
+YS;;EN;Hop! Regional
+YT;NYT;EN;Yeti Airlines
+YU;MMZ;EN;Euroatlantic Airways
+YV;ASH;EN;Mesa Airlines
+YW;ANE;EN;Air Nostrum
+YX;RPA;EN;Republic Airline
+Z2;APG;EN;Philippines Airasia
+Z3;TNR;EN;Tanana Air Service
+Z4;GZQ;EN;Zagrosjet
+Z5;GAA;EN;Global Africa Aviation
+Z6;UDN;EN;Dnieproavia
+Z7;AUZ;EN;Amaszonas Uruguay
+Z8;AZN;EN;Amaszonas
+Z9;BEK;EN;Bek Air
+ZA;SWM;EN;Sky Angkor Airlines
+ZB;MON;EN;Monarch Airlines Ltd.
+ZC;FZW;EN;Flyafrica
+ZD;EWR;EN;Ewa Air
+ZE;ESR;EN;Eastar Jet
+ZF;SXY;EN;Safari Express Cargo
+ZH;CSZ;EN;Shenzhen Airlines
+ZI;AAF;EN;Aigle Azur
+ZJ;;EN;Air Routing International L.P.
+ZK;ZAV;EN;Aircompany Zetavia
+ZL;RXA;EN;Regional Express
+ZM;MBB;EN;Air Manas
+ZN;;EN;Naysa
+ZO;;EN;Zoom Air
+ZP;AZQ;EN;Silk Way Airlines
+ZQ;AZM;EN;Azman Air
+ZR;AZS;EN;Aviacon Zitotrans
+ZT;AWC;EN;Titan Airways
+ZU;;EN;Sunair Aviation
+ZV;;EN;V Air Corporation
+ZW;AWI;EN;Air Wisconsin
+ZX;GGN;EN;Air Georgian
+ZY;CCO;EN;China Air Cargo
+ZZ;;EN;Alc
+ZZ;;EN;Alc
+ZZ;;EN;Alc
+ZZ;;EN;Alc
