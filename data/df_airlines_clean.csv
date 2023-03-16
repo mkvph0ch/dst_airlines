@@ -88,10 +88,6 @@ AirlineID;AirlineID_ICAO;AirlineName
 4W;WAV;Warbelows Air Ventures
 4X;;Mercury World Cargo
 4Y;BGA;Airbus Transport International
-4Y;BGA;Airbus Transport International
-4Y;OCN;Eurowings Discover
-4Y;BGA;Airbus Transport International
-4Y;BGA;Airbus Transport International
 4Z;LNK;Airlink
 5A;AIP;Alpine Air
 5B;BSX;Bassaka Air
@@ -100,7 +96,6 @@ AirlineID;AirlineID_ICAO;AirlineName
 5E;JTM;East Coast Flight Services Inc
 5F;FIA;Flyone
 5G;CUO;Aerocuahonte
-5H;FFV;Fly540
 5H;FFV;Fly540
 5I;;Alsa Grupo Slu
 5J;CEB;Cebu Pacific Air
@@ -635,7 +630,6 @@ LE;;Lion Air Cargo Tanzania
 LF;VTE;Contour Aviation
 LG;LGL;Luxair
 LH;DLH;Lufthansa
-LH;GEC;Lufthansa Cargo
 LI;LIA;Liat
 LJ;JNA;Jin Air
 LK;LLL;Lao Skyway
@@ -697,7 +691,6 @@ N6;ACQ;Nuevo Continente S.A.
 N7;NEP;Neptune Air
 N8;NCR;National Airlines
 N9;NVR;Novair
-;NSS;Nesma Airlines (Saudi Arabia)
 NB;EAN;Skypower Express Airways
 NC;NAC;Northern Air Cargo
 ND;FMI;Fmi Air Charter
@@ -1131,7 +1124,4 @@ ZV;;V Air Corporation
 ZW;AWI;Air Wisconsin
 ZX;GGN;Air Georgian
 ZY;CCO;China Air Cargo
-ZZ;;Alc
-ZZ;;Alc
-ZZ;;Alc
 ZZ;;Alc

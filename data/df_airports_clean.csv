@@ -99,7 +99,6 @@ ADU;ADU;IR;Airport;+03:30;Asia/Tehran;38.3256;48.4242;Ardabil
 ADV;ADV;SD;Airport;+02:00;Africa/Khartoum;11.4022;26.1186;Addeain
 ADW;ADW;US;Airport;-05:00;America/New_York;38.8089;-76.8708;Camp Springs Andrews
 ADX;ADX;GB;Airport;+00:00;Europe/London;56.3667;-2.8667;St Andrews Raf Leuchars
-ADX;ADX;GB;Airport;+00:00;Europe/London;56.3667;-2.8667;St Andrews Raf Leuchars
 ADY;ADY;ZA;Airport;+02:00;Africa/Johannesburg;-22.6667;29.1;Alldays
 ADZ;ADZ;CO;Airport;-05:00;America/Bogota;12.5836;-81.7111;San Andres Island
 AEA;AEA;KI;Airport;+12:00;Pacific/Tarawa;0.4906;173.83;Abemama Atoll
@@ -2967,7 +2966,6 @@ GOJ;GOJ;RU;Airport;+03:00;Europe/Moscow;56.23;43.7842;Nizhniy Novgorod
 GOK;GOK;US;Airport;-06:00;America/Chicago;35.8833;-97.4167;Guthrie-Edmond Rgnl
 GOL;GOL;US;Airport;-08:00;America/Los_Angeles;42.4167;-124.4167;Gold Beach Municipal
 GOM;GOM;CD;Airport;+02:00;Africa/Lubumbashi;-1.6708;29.2383;
-GOM;GOM;CD;Airport;+02:00;Africa/Lubumbashi;-1.6708;29.2383;Goma
 GON;GON;US;Airport;-05:00;America/New_York;41.3297;-72.0439;Groton/New London
 GOO;GOO;AU;Airport;+10:00;Australia/Brisbane;-28.5167;150.3167;Goondiwindi
 GOP;GOP;IN;Airport;+05:30;Asia/Kolkata;26.7411;83.45;Gorakhpur
@@ -2989,7 +2987,6 @@ GPN;GPN;AU;Airport;+09:30;Australia/Darwin;-11.4;130.4333;Garden Point
 GPO;GPO;AR;Airport;-03:00;America/Argentina/Buenos_Aires;-35.7;-63.75;General Pico
 GPP;GOA;IT;Rail Station;+01:00;Europe/Rome;44.4175;8.92;Genoa Plazza Principe Rail Stn
 GPS;GPS;EC;Airport;-06:00;Pacific/Galapagos;-0.4539;-90.2658;
-GPS;GPS;EC;Airport;-06:00;Pacific/Galapagos;-0.4539;-90.2658;Baltra Island Seymour
 GPT;GPT;US;Airport;-06:00;America/Chicago;30.4072;-89.07;Gulfport/Biloxi
 GPZ;GPZ;US;Airport;-06:00;America/Chicago;47.2086;-93.5111;Grand Rapids Itasca County
 GQJ;GQJ;GB;Airport;+00:00;Europe/London;55.4333;-5.7;Raf Machrihanish
@@ -3179,7 +3176,6 @@ HBT;HRI;LK;Airport;+05:30;Asia/Colombo;6.1228;81.1042;Hambantota Spb
 HBU;HBU;MN;Airport;+08:00;Asia/Ulaanbaatar;46.1019;91.5842;Bulgan (Khovd)
 HBV;HRB;CN;Rail Station;+08:00;Asia/Shanghai;45.7594;126.6269;Harbinxi Rail Station
 HBX;HBX;IN;Airport;+05:30;Asia/Kolkata;15.3617;75.0869;Hubli
-HBX;HBX;IN;Airport;+05:30;Asia/Kolkata;15.3617;75.0869;
 HBZ;HAJ;DE;Bus Station;+01:00;Europe/Berlin;52.6328;9.7367;Hannover Bus Station
 HCA;HCA;US;Airport;-06:00;America/Chicago;32.3;-101.4333;Big Spring Mcmahon-Wrinkle
 HCB;HCB;US;Airport;-09:00;America/Anchorage;55.4583;-131.2833;Shoal Cove
@@ -3202,7 +3198,6 @@ HDH;HDH;US;Airport;-10:00;Pacific/Honolulu;21.5797;-158.1972;Mokuleia Dillingham
 HDK;HDK;MV;Airport;+05:00;Indian/Maldives;6.6308;73.0678;Kulhudhuffushi
 HDM;HDM;IR;Airport;+03:30;Asia/Tehran;34.8675;48.5564;Hamadan
 HDN;HDN;US;Airport;-07:00;America/Denver;40.4833;-107.2236;Hayden Yampa Valley
-HDN;HDN;US;Airport;-07:00;America/Denver;40.4833;-107.2236;
 HDR;HDR;IR;Airport;+03:30;Asia/Tehran;27.05;56.1667;Havadarya
 HDS;HDS;ZA;Airport;+02:00;Africa/Johannesburg;-24.3486;30.9469;Hoedspruit
 HDY;HDY;TH;Airport;+07:00;Asia/Bangkok;6.9328;100.395;Hat Yai
