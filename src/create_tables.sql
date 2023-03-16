@@ -6,8 +6,9 @@ CREATE TABLE countries (
 CREATE TABLE cities (
     CityCode char(3) NOT NULL,
     CountryCode char(2) NOT NULL,
-    UtcOffset time NOT NULL,
-    TimeZoneId time NOT NULL,
+    UtcOffset interval NOT NULL,
+    TimeZoneId text NOT NULL,
+    CityName text NOT NULL,
     PRIMARY KEY (CityCode),
     FOREIGN KEY (CountryCode) REFERENCES countries (CountryCode)
 ); 
@@ -16,8 +17,8 @@ CREATE TABLE airports (
     CityCode char(3) NOT NULL,
     CountryCode char(2) NOT NULL,
     LocationType text,
-    UtcOffset time NOT NULL,
-    TimeZoneId time NOT NULL,
+    UtcOffset interval NOT NULL,
+    TimeZoneId text NOT NULL,
     Latitude double precision NOT NULL,
     Longitude double precision NOT NULL,
     AirportName text NOT NULL,
