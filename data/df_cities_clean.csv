@@ -99,7 +99,6 @@ ADY;ZA;+02:00;Africa/Johannesburg;Alldays
 ADZ;CO;-05:00;America/Bogota;San Andres Island
 AEA;KI;+12:00;Pacific/Tarawa;Abemama
 AEB;CN;+08:00;Asia/Shanghai;Baise
-AEB;CN;+08:00;Asia/Shanghai;Baise
 AED;US;-09:00;America/Anchorage;Aleneva
 AEE;SS;+02:00;Africa/Juba;Adareil
 AEG;ID;+07:00;Asia/Pontianak;Aek Godang
@@ -2536,7 +2535,6 @@ GBF;PG;+10:00;Pacific/Port_Moresby;Negarbo
 GBG;US;-06:00;America/Chicago;Galesburg
 GBH;US;-09:00;America/Anchorage;Galbraith
 GBI;IN;+05:30;Asia/Kolkata;Gulbarga
-GBI;IN;+05:30;Asia/Kolkata;Gulbarga
 GBJ;GP;-04:00;America/Guadeloupe;Marie Galante
 GBK;SL;+00:00;Africa/Freetown;Gbangbatok
 GBL;AU;+09:30;Australia/Darwin;South Goulburn Island
@@ -3491,8 +3489,6 @@ IXU;IN;+05:30;Asia/Kolkata;Aurangabad
 IXV;IN;+05:30;Asia/Kolkata;Along
 IXW;IN;+05:30;Asia/Kolkata;Jamshedpur
 IXX;IN;+05:30;Asia/Kolkata;Bidar Airport
-IXX;IN;+05:30;Asia/Kolkata;Bidar
-IXX;IN;+05:30;Asia/Kolkata;Bidar
 IXY;IN;+05:30;Asia/Kolkata;Kandla
 IXZ;IN;+05:30;Asia/Kolkata;Port Blair
 IYK;US;-08:00;America/Los_Angeles;Inyokern
@@ -9026,8 +9022,6 @@ WAP;CL;-04:00;America/Santiago;Alto Palena
 WAQ;MG;+03:00;Indian/Antananarivo;Antsalova
 WAR;ID;+09:00;Asia/Jayapura;Waris
 WAS;US;-05:00;America/New_York;Washington
-WAS;US;-05:00;America/New_York;Washington
-WAS;US;-05:00;America/New_York;Washington
 WAT;IE;+00:00;Europe/Dublin;Waterford
 WAU;AU;+09:30;Australia/Darwin;Wauchope
 WAV;AU;+09:30;Australia/Darwin;Wave Hill
@@ -10222,7 +10216,6 @@ YXS;CA;-08:00;America/Vancouver;Prince George
 YXT;CA;-08:00;America/Vancouver;Terrace
 YXU;CA;-05:00;America/Toronto;London
 YXX;CA;-08:00;America/Vancouver;Vancouver
-YXX;CA;-08:00;America/Vancouver;Abbotsford
 YXY;CA;-07:00;America/Dawson_Creek;Whitehorse
 YXZ;CA;-05:00;America/Toronto;Wawa
 YYA;CN;+08:00;Asia/Shanghai;Yueyang
