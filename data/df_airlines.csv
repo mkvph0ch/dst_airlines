@@ -88,10 +88,6 @@ AirlineID;AirlineID_ICAO;Names.Name.@LanguageCode;Names.Name.$
 4W;WAV;EN;Warbelows Air Ventures
 4X;;EN;Mercury World Cargo
 4Y;BGA;EN;Airbus Transport International
-4Y;BGA;EN;Airbus Transport International
-4Y;OCN;EN;Eurowings Discover
-4Y;BGA;EN;Airbus Transport International
-4Y;BGA;EN;Airbus Transport International
 4Z;LNK;EN;Airlink
 5A;AIP;EN;Alpine Air
 5B;BSX;EN;Bassaka Air
@@ -100,7 +96,6 @@ AirlineID;AirlineID_ICAO;Names.Name.@LanguageCode;Names.Name.$
 5E;JTM;EN;East Coast Flight Services Inc
 5F;FIA;EN;Flyone
 5G;CUO;EN;Aerocuahonte
-5H;FFV;EN;Fly540
 5H;FFV;EN;Fly540
 5I;;EN;Alsa Grupo Slu
 5J;CEB;EN;Cebu Pacific Air
@@ -635,7 +630,6 @@ LE;;EN;Lion Air Cargo Tanzania
 LF;VTE;EN;Contour Aviation
 LG;LGL;EN;Luxair
 LH;DLH;EN;Lufthansa
-LH;GEC;EN;Lufthansa Cargo
 LI;LIA;EN;Liat
 LJ;JNA;EN;Jin Air
 LK;LLL;EN;Lao Skyway
@@ -1131,7 +1125,4 @@ ZV;;EN;V Air Corporation
 ZW;AWI;EN;Air Wisconsin
 ZX;GGN;EN;Air Georgian
 ZY;CCO;EN;China Air Cargo
-ZZ;;EN;Alc
-ZZ;;EN;Alc
-ZZ;;EN;Alc
 ZZ;;EN;Alc

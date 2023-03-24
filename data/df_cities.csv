@@ -99,7 +99,6 @@ ADY;ZA;+02:00;Africa/Johannesburg;EN;Alldays;ADY
 ADZ;CO;-05:00;America/Bogota;EN;San Andres Island;ADZ
 AEA;KI;+12:00;Pacific/Tarawa;EN;Abemama;AEA
 AEB;CN;+08:00;Asia/Shanghai;EN;Baise;AEB
-AEB;CN;+08:00;Asia/Shanghai;EN;Baise;AEB
 AED;US;-09:00;America/Anchorage;EN;Aleneva;AED
 AEE;SS;+02:00;Africa/Juba;EN;Adareil;AEE
 AEG;ID;+07:00;Asia/Pontianak;EN;Aek Godang;AEG
@@ -2536,7 +2535,6 @@ GBF;PG;+10:00;Pacific/Port_Moresby;EN;Negarbo;GBF
 GBG;US;-06:00;America/Chicago;EN;Galesburg;GBG
 GBH;US;-09:00;America/Anchorage;EN;Galbraith;GBH
 GBI;IN;+05:30;Asia/Kolkata;EN;Gulbarga;GBI
-GBI;IN;+05:30;Asia/Kolkata;EN;Gulbarga;GBI
 GBJ;GP;-04:00;America/Guadeloupe;EN;Marie Galante;GBJ
 GBK;SL;+00:00;Africa/Freetown;EN;Gbangbatok;GBK
 GBL;AU;+09:30;Australia/Darwin;EN;South Goulburn Island;GBL
@@ -3491,8 +3489,6 @@ IXU;IN;+05:30;Asia/Kolkata;EN;Aurangabad;IXU
 IXV;IN;+05:30;Asia/Kolkata;EN;Along;IXV
 IXW;IN;+05:30;Asia/Kolkata;EN;Jamshedpur;IXW
 IXX;IN;+05:30;Asia/Kolkata;EN;Bidar Airport;IXX
-IXX;IN;+05:30;Asia/Kolkata;EN;Bidar;IXX
-IXX;IN;+05:30;Asia/Kolkata;EN;Bidar;IXX
 IXY;IN;+05:30;Asia/Kolkata;EN;Kandla;IXY
 IXZ;IN;+05:30;Asia/Kolkata;EN;Port Blair;IXZ
 IYK;US;-08:00;America/Los_Angeles;EN;Inyokern;IYK
@@ -9026,8 +9022,6 @@ WAP;CL;-04:00;America/Santiago;EN;Alto Palena;WAP
 WAQ;MG;+03:00;Indian/Antananarivo;EN;Antsalova;WAQ
 WAR;ID;+09:00;Asia/Jayapura;EN;Waris;WAR
 WAS;US;-05:00;America/New_York;EN;Washington;['BOF', 'BWI', 'BZS', 'DCA', 'GBO', 'IAD', 'JPN', 'MTN', 'ZBP', 'ZRZ', 'ZWU']
-WAS;US;-05:00;America/New_York;EN;Washington;['BOF', 'BWI', 'BZS', 'DCA', 'GBO', 'IAD', 'JPN', 'MTN', 'ZBP', 'ZRZ', 'ZWU']
-WAS;US;-05:00;America/New_York;EN;Washington;['BOF', 'BWI', 'BZS', 'DCA', 'GBO', 'IAD', 'JPN', 'MTN', 'ZBP', 'ZRZ', 'ZWU']
 WAT;IE;+00:00;Europe/Dublin;EN;Waterford;WAT
 WAU;AU;+09:30;Australia/Darwin;EN;Wauchope;WAU
 WAV;AU;+09:30;Australia/Darwin;EN;Wave Hill;WAV
@@ -10222,7 +10216,6 @@ YXS;CA;-08:00;America/Vancouver;EN;Prince George;['XDV', 'YXS']
 YXT;CA;-08:00;America/Vancouver;EN;Terrace;YXT
 YXU;CA;-05:00;America/Toronto;EN;London;['XDQ', 'YXU']
 YXX;CA;-08:00;America/Vancouver;EN;Vancouver;YXX
-YXX;CA;-08:00;America/Vancouver;EN;Abbotsford;YXX
 YXY;CA;-07:00;America/Dawson_Creek;EN;Whitehorse;YXY
 YXZ;CA;-05:00;America/Toronto;EN;Wawa;YXZ
 YYA;CN;+08:00;Asia/Shanghai;EN;Yueyang;['YUG', 'YYA']
