@@ -2,10 +2,10 @@ CREATE TABLE countries (
     CountryCode char(2) NOT NULL,
     CountryName text,
     PRIMARY KEY (CountryCode)
-); 
+);
 CREATE TABLE cities (
     CityCode char(3) NOT NULL,
-    CountryCode char(2),
+    CountryCode char(2) NOT NULL,
     UtcOffset interval,
     TimeZoneId text,
     CityName text,
@@ -14,8 +14,8 @@ CREATE TABLE cities (
 ); 
 CREATE TABLE airports (
     AirportCode char(3) NOT NULL,
-    CityCode char(3),
-    CountryCode char(2),
+    CityCode char(3) NOT NULL,
+    CountryCode char(2) NOT NULL,
     LocationType text,
     UtcOffset interval,
     TimeZoneId text,
@@ -23,11 +23,11 @@ CREATE TABLE airports (
     Longitude double precision,
     AirportName text,
     PRIMARY KEY (AirportCode),
-    FOREIGN KEY (CityCode) REFERENCES cities (CounCityCodetryCode),
     FOREIGN KEY (CountryCode) REFERENCES countries (CountryCode)
-); 
+    FOREIGN KEY (CityCode) REFERENCES cities (CityCode)
+    ); 
 CREATE TABLE airlines (
-    AirlineID char(2) NOT NULL,
+    AirlineID char(3) NOT NULL,
     AirlineID_ICAO char(3),
     AirlineName text,
     PRIMARY KEY (AirlineID)
