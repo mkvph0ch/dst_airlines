@@ -81,7 +81,7 @@ ADE;YE;+03:00;Asia/Aden;Aden
 ADF;TR;+03:00;Europe/Istanbul;Adiyaman
 ADG;US;-05:00;America/New_York;Adrian
 ADH;RU;+09:00;Asia/Yakutsk;Aldan
-ADI;;+02:00;Africa/Windhoek;Arandis
+ADI;NA;+02:00;Africa/Windhoek;Arandis
 ADK;US;-10:00;America/Adak;Adak Island
 ADL;AU;+09:30;Australia/Adelaide;Adelaide
 ADM;US;-06:00;America/Chicago;Ardmore
@@ -188,7 +188,7 @@ AIS;KI;+12:00;Pacific/Tarawa;Arorae
 AIT;CK;-10:00;Pacific/Rarotonga;Aitutaki Island
 AIU;CK;-10:00;Pacific/Rarotonga;Atiu Island
 AIV;US;-06:00;America/Chicago;Aliceville
-AIW;;+02:00;Africa/Windhoek;Ai-Ais
+AIW;NA;+02:00;Africa/Windhoek;Ai-Ais
 AIY;US;-05:00;America/New_York;Atlantic City
 AIZ;US;-06:00;America/Chicago;Kaiser/Lake Of The Ozarks
 AJA;FR;+01:00;Europe/Paris;Ajaccio
@@ -915,7 +915,7 @@ BQB;AU;+08:00;Australia/Perth;Busselton
 BQD;IT;+01:00;Europe/Rome;Brindisi
 BQE;GW;+00:00;Africa/Bissau;Bubaque
 BQG;RU;+10:00;Asia/Vladivostok;Bogorodskoye
-BQI;;+02:00;Africa/Windhoek;Bagani
+BQI;NA;+02:00;Africa/Windhoek;Bagani
 BQJ;RU;+10:00;Asia/Vladivostok;Batagay
 BQL;AU;+10:00;Australia/Brisbane;Boulia
 BQN;PR;-04:00;America/Puerto_Rico;Aguadilla
@@ -2609,7 +2609,7 @@ GFL;US;-05:00;America/New_York;Glens Falls
 GFN;AU;+10:00;Australia/Sydney;Grafton
 GFO;GY;-04:00;America/Guyana;Bartica
 GFR;FR;+01:00;Europe/Paris;Granville
-GFY;;+02:00;Africa/Windhoek;Grootfontein
+GFY;NA;+02:00;Africa/Windhoek;Grootfontein
 GGA;ES;+00:00;Atlantic/Canary;La Graciosa
 GGB;BR;-04:00;America/Porto_Velho;Agua Boa
 GGC;AO;+01:00;Africa/Luanda;Lumbala N' Guimbo
@@ -2730,7 +2730,7 @@ GOA;IT;+01:00;Europe/Rome;Genoa
 GOB;ET;+03:00;Africa/Addis_Ababa;Goba
 GOC;PG;+10:00;Pacific/Port_Moresby;Gora
 GOE;PG;+10:00;Pacific/Port_Moresby;Gonalia
-GOG;;+02:00;Africa/Windhoek;Gobabis
+GOG;NA;+02:00;Africa/Windhoek;Gobabis
 GOH;GL;-03:00;America/Godthab;Nuuk
 GOI;IN;+05:30;Asia/Kolkata;Goa
 GOJ;RU;+03:00;Europe/Moscow;Nizhny Novgorod
@@ -2899,7 +2899,7 @@ HAG;NL;+01:00;Europe/Amsterdam;The Hague
 HAI;US;-05:00;America/New_York;Three Rivers
 HAJ;DE;+01:00;Europe/Berlin;Hannover
 HAK;CN;+08:00;Asia/Shanghai;Haikou
-HAL;;+02:00;Africa/Windhoek;Halali
+HAL;NA;+02:00;Africa/Windhoek;Halali
 HAM;DE;+01:00;Europe/Berlin;Hamburg
 HAN;VN;+07:00;Asia/Ho_Chi_Minh;Hanoi
 HAO;US;-05:00;America/New_York;Hamilton
@@ -3728,7 +3728,7 @@ KAO;FI;+02:00;Europe/Helsinki;Kuusamo
 KAP;CD;+02:00;Africa/Lubumbashi;Kapanga
 KAQ;PG;+10:00;Pacific/Port_Moresby;Kamulai
 KAR;GY;-04:00;America/Guyana;Kamarang
-KAS;;+02:00;Africa/Windhoek;Karasburg
+KAS;NA;+02:00;Africa/Windhoek;Karasburg
 KAT;NZ;+12:00;Pacific/Auckland;Kaitaia
 KAU;FI;+02:00;Europe/Helsinki;Kauhava
 KAV;VE;-04:00;America/Caracas;Kanavayen
@@ -3987,7 +3987,7 @@ KML;AU;+10:00;Australia/Brisbane;Kamileroi
 KMM;ID;+09:00;Asia/Jayapura;Kimam
 KMN;CD;+02:00;Africa/Lubumbashi;Kamina
 KMO;US;-09:00;America/Anchorage;Manokotak
-KMP;;+02:00;Africa/Windhoek;Keetmanshoop
+KMP;NA;+02:00;Africa/Windhoek;Keetmanshoop
 KMQ;JP;+09:00;Asia/Tokyo;Komatsu
 KMR;PG;+10:00;Pacific/Port_Moresby;Karimui
 KMS;GH;+00:00;Africa/Accra;Kumasi
@@ -4409,7 +4409,7 @@ LHK;CN;+08:00;Asia/Shanghai;Laohekou
 LHN;TW;+08:00;Asia/Taipei;Lishan
 LHP;PG;+11:00;Pacific/Bougainville;Lehu
 LHS;AR;-03:00;America/Argentina/Buenos_Aires;Las Heras
-LHU;;+02:00;Africa/Windhoek;Lianshulu
+LHU;NA;+02:00;Africa/Windhoek;Lianshulu
 LHV;US;-05:00;America/New_York;Lock Haven
 LHW;CN;+08:00;Asia/Shanghai;Lanzhou Zhongchuan Apt
 LIA;CN;+08:00;Asia/Shanghai;Liangping
@@ -4651,7 +4651,7 @@ LTZ;IT;+01:00;Europe/Rome;Lamezia Terme Central
 LUA;NP;+05:45;Asia/Kathmandu;Lukla
 LUB;GY;-04:00;America/Guyana;Lumidpau
 LUC;FJ;+12:00;Pacific/Fiji;Laucala Island
-LUD;;+02:00;Africa/Windhoek;Luderitz
+LUD;NA;+02:00;Africa/Windhoek;Luderitz
 LUE;SK;+01:00;Europe/Bratislava;Lucenec
 LUG;CH;+01:00;Europe/Zurich;Lugano
 LUH;IN;+05:30;Asia/Kolkata;Ludhiana
@@ -4958,7 +4958,7 @@ MJK;AU;+08:00;Australia/Perth;Monkey Mia
 MJL;GA;+01:00;Africa/Libreville;Mouila
 MJM;CD;+02:00;Africa/Lubumbashi;Mbuji-Mayi
 MJN;MG;+03:00;Indian/Antananarivo;Mahajanga
-MJO;;+02:00;Africa/Windhoek;Mount Etjo
+MJO;NA;+02:00;Africa/Windhoek;Mount Etjo
 MJP;AU;+08:00;Australia/Perth;Manjimup
 MJQ;US;-06:00;America/Chicago;Jackson
 MJR;AR;-03:00;America/Argentina/Buenos_Aires;Miramar
@@ -5096,7 +5096,7 @@ MOW;RU;+03:00;Europe/Moscow;Moscow
 MOX;US;-06:00;America/Chicago;Morris
 MOY;CO;-05:00;America/Bogota;Monterrey
 MOZ;PF;-10:00;Pacific/Tahiti;Moorea
-MPA;;+02:00;Africa/Windhoek;Katima Mulilo
+MPA;NA;+02:00;Africa/Windhoek;Katima Mulilo
 MPC;ID;+07:00;Asia/Pontianak;Muko-Muko
 MPD;PK;+05:00;Asia/Karachi;Mirpur Khas
 MPE;US;-05:00;America/New_York;Madison
@@ -5127,7 +5127,7 @@ MQC;PM;-03:00;America/Miquelon;Miquelon
 MQD;AR;-03:00;America/Argentina/Buenos_Aires;Maquinchao
 MQE;AU;+09:30;Australia/Darwin;Marqua
 MQF;RU;+05:00;Asia/Yekaterinburg;Magnitogorsk
-MQG;;+02:00;Africa/Windhoek;Midgard
+MQG;NA;+02:00;Africa/Windhoek;Midgard
 MQH;BR;-03:00;America/Araguaina;Minacu
 MQI;US;-05:00;America/New_York;Quincy
 MQJ;RU;+11:00;Asia/Srednekolymsk;Khonuu
@@ -5438,7 +5438,7 @@ NDN;PG;+10:00;Pacific/Port_Moresby;Nadunumu
 NDO;ES;+01:00;Europe/Madrid;La Palma Del Condada
 NDR;MA;+01:00;Africa/Casablanca;Nador
 NDS;AU;+08:00;Australia/Perth;Sandstone
-NDU;;+02:00;Africa/Windhoek;Rundu
+NDU;NA;+02:00;Africa/Windhoek;Rundu
 NDV;US;-05:00;America/New_York;Anacostia
 NDY;GB;+00:00;Europe/London;Sanday
 NDZ;DE;+01:00;Europe/Berlin;Nordholz-Spieka
@@ -5554,7 +5554,7 @@ NNB;SB;+11:00;Pacific/Guadalcanal;Santa Ana Island
 NND;MZ;+02:00;Africa/Maputo;Nangade
 NNE;FR;+01:00;Europe/Paris;Narbonne
 NNG;CN;+08:00;Asia/Shanghai;Nanning
-NNI;;+02:00;Africa/Windhoek;Namutoni
+NNI;NA;+02:00;Africa/Windhoek;Namutoni
 NNK;US;-09:00;America/Anchorage;Naknek
 NNL;US;-09:00;America/Anchorage;Nondalton
 NNM;RU;+03:00;Europe/Moscow;Naryan-Mar
@@ -5785,7 +5785,7 @@ OGO;CI;+00:00;Africa/Abidjan;Abengourou
 OGR;TD;+01:00;Africa/Ndjamena;Bongor
 OGS;US;-05:00;America/New_York;Ogdensburg
 OGU;TR;+03:00;Europe/Istanbul;Ordu Giresun
-OGV;;+02:00;Africa/Windhoek;Ongava
+OGV;NA;+02:00;Africa/Windhoek;Ongava
 OGX;DZ;+01:00;Africa/Algiers;Ouargla
 OGZ;RU;+03:00;Europe/Moscow;Vladikavkaz
 OHA;NZ;+12:00;Pacific/Auckland;Ohakea
@@ -5794,7 +5794,7 @@ OHC;US;-09:00;America/Anchorage;North East Cape
 OHD;MK;+01:00;Europe/Skopje;Ohrid
 OHE;CN;+08:00;Asia/Shanghai;Mohe
 OHH;RU;+11:00;Asia/Srednekolymsk;Okha
-OHI;;+02:00;Africa/Windhoek;Oshakati
+OHI;NA;+02:00;Africa/Windhoek;Oshakati
 OHO;RU;+10:00;Asia/Vladivostok;Okhotsk
 OHR;DE;+01:00;Europe/Berlin;Wyk Auf Fohr
 OHS;OM;+04:00;Asia/Muscat;Sohar
@@ -5810,7 +5810,7 @@ OKA;JP;+09:00;Asia/Tokyo;Okinawa
 OKB;AU;+10:00;Australia/Brisbane;Fraser Island
 OKC;US;-06:00;America/Chicago;Oklahoma City
 OKE;JP;+09:00;Asia/Tokyo;Okierabu
-OKF;;+02:00;Africa/Windhoek;Okaukuejo
+OKF;NA;+02:00;Africa/Windhoek;Okaukuejo
 OKG;CG;+01:00;Africa/Brazzaville;Okoyo
 OKH;GB;+00:00;Europe/London;Oakham
 OKI;JP;+09:00;Asia/Tokyo;Oki
@@ -5824,7 +5824,7 @@ OKQ;ID;+09:00;Asia/Jayapura;Okaba
 OKR;AU;+10:00;Australia/Brisbane;Yorke Island
 OKS;US;-07:00;America/Denver;Oshkosh
 OKT;RU;+05:00;Asia/Yekaterinburg;Oktiabrsky
-OKU;;+02:00;Africa/Windhoek;Mokuti Lodge
+OKU;NA;+02:00;Africa/Windhoek;Mokuti Lodge
 OKV;PG;+10:00;Pacific/Port_Moresby;Okao
 OKY;AU;+10:00;Australia/Brisbane;Oakey
 OLA;NO;+01:00;Europe/Oslo;Orland
@@ -5853,10 +5853,10 @@ OLZ;RU;+09:00;Asia/Yakutsk;Olekminsk
 OMA;US;-06:00;America/Chicago;Omaha
 OMB;GA;+01:00;Africa/Libreville;Omboue
 OMC;PH;+08:00;Asia/Manila;Ormoc
-OMD;;+02:00;Africa/Windhoek;Oranjemund
+OMD;NA;+02:00;Africa/Windhoek;Oranjemund
 OME;US;-09:00;America/Anchorage;Nome
 OMF;JO;+03:00;Asia/Amman;Mafraq
-OMG;;+02:00;Africa/Windhoek;Omega
+OMG;NA;+02:00;Africa/Windhoek;Omega
 OMH;IR;+03:30;Asia/Tehran;Urumiyeh
 OMI;IR;+03:30;Asia/Tehran;Omidiyeh
 OMJ;JP;+09:00;Asia/Tokyo;Nagasaki
@@ -5870,7 +5870,7 @@ OMS;RU;+06:00;Asia/Omsk;Omsk
 OMY;KH;+07:00;Asia/Phnom_Penh;Thbeng Meanchey
 ONA;US;-06:00;America/Chicago;Winona
 ONB;PG;+10:00;Pacific/Port_Moresby;Ononge
-OND;;+02:00;Africa/Windhoek;Ondangwa
+OND;NA;+02:00;Africa/Windhoek;Ondangwa
 ONE;SB;+11:00;Pacific/Guadalcanal;Onepusu
 ONG;AU;+10:00;Australia/Brisbane;Mornington Island
 ONH;US;-05:00;America/New_York;Oneonta
@@ -5905,7 +5905,7 @@ OPP;BR;-03:00;America/Araguaina;Salinopolis
 OPQ;CN;+08:00;Asia/Shanghai;Puning
 OPS;BR;-04:00;America/Porto_Velho;Sinop
 OPU;PG;+10:00;Pacific/Port_Moresby;Balimo
-OPW;;+02:00;Africa/Windhoek;Opuwo
+OPW;NA;+02:00;Africa/Windhoek;Opuwo
 ORA;AR;-03:00;America/Argentina/Buenos_Aires;Oran
 ORB;SE;+01:00;Europe/Stockholm;Orebro
 ORC;CO;-05:00;America/Bogota;Orocue
@@ -5959,7 +5959,7 @@ OTD;PA;-05:00;America/Panama;Contadora Island
 OTG;US;-06:00;America/Chicago;Worthington
 OTH;US;-08:00;America/Los_Angeles;North Bend
 OTI;ID;+09:00;Asia/Jayapura;Morotai Island
-OTJ;;+02:00;Africa/Windhoek;Otjiwarongo
+OTJ;NA;+02:00;Africa/Windhoek;Otjiwarongo
 OTK;US;-08:00;America/Los_Angeles;Tillamook
 OTL;MR;+00:00;Africa/Nouakchott;Boutilimit
 OTM;US;-06:00;America/Chicago;Ottumwa
@@ -7232,7 +7232,7 @@ RHE;FR;+01:00;Europe/Paris;Reims
 RHG;RW;+02:00;Africa/Kigali;Ruhengeri
 RHI;US;-06:00;America/Chicago;Rhinelander
 RHL;AU;+08:00;Australia/Perth;Roy Hill
-RHN;;+02:00;Africa/Windhoek;Rosh Pinah
+RHN;NA;+02:00;Africa/Windhoek;Rosh Pinah
 RHO;GR;+02:00;Europe/Athens;Rhodes
 RHP;NP;+05:45;Asia/Kathmandu;Ramechhap
 RHT;CN;+08:00;Asia/Shanghai;Alxa Right Banner
@@ -8000,7 +8000,7 @@ SWL;PH;+08:00;Asia/Manila;San Vicente
 SWM;BR;-04:00;America/Porto_Velho;Alto Boa Vista
 SWN;PK;+05:00;Asia/Karachi;Sahiwal
 SWO;US;-06:00;America/Chicago;Stillwater
-SWP;;+02:00;Africa/Windhoek;Swakopmund
+SWP;NA;+02:00;Africa/Windhoek;Swakopmund
 SWQ;ID;+08:00;Asia/Makassar;Sumbawa
 SWR;PG;+10:00;Pacific/Port_Moresby;Silur
 SWS;GB;+00:00;Europe/London;Swansea
@@ -8071,7 +8071,7 @@ SZI;KZ;+06:00;Asia/Almaty;Zaysan
 SZJ;CU;-05:00;America/Havana;Siguanea
 SZK;ZA;+02:00;Africa/Johannesburg;Skukuza
 SZL;US;-06:00;America/Chicago;Knob Noster
-SZM;;+02:00;Africa/Windhoek;Sesriem
+SZM;NA;+02:00;Africa/Windhoek;Sesriem
 SZO;CN;+08:00;Asia/Shanghai;Shanzhou
 SZP;US;-08:00;America/Los_Angeles;Santa Paula
 SZQ;AR;-03:00;America/Argentina/Buenos_Aires;Saenz Pena
@@ -8158,7 +8158,7 @@ TCU;ZA;+02:00;Africa/Johannesburg;Thaba Nchu
 TCV;BS;-05:00;America/Nassau;Hog Cay
 TCW;AU;+10:00;Australia/Sydney;Tocumwal
 TCX;IR;+03:30;Asia/Tehran;Tabas
-TCY;;+02:00;Africa/Windhoek;Terrace Bay
+TCY;NA;+02:00;Africa/Windhoek;Terrace Bay
 TCZ;CN;+08:00;Asia/Shanghai;Tengchong
 TDA;CO;-05:00;America/Bogota;Trinidad
 TDB;PG;+10:00;Pacific/Port_Moresby;Tetabedi
@@ -8474,7 +8474,7 @@ TRW;KI;+12:00;Pacific/Tarawa;Tarawa
 TRX;US;-06:00;America/Chicago;Trenton
 TRY;UG;+03:00;Africa/Kampala;Tororo
 TRZ;IN;+05:30;Asia/Kolkata;Tiruchchirappalli
-TSB;;+02:00;Africa/Windhoek;Tsumeb
+TSB;NA;+02:00;Africa/Windhoek;Tsumeb
 TSC;EC;-05:00;America/Guayaquil;Taisha
 TSD;ZA;+02:00;Africa/Johannesburg;Tshipise
 TSE;KZ;+06:00;Asia/Almaty;Nur-Sultan
@@ -9050,7 +9050,7 @@ WCR;US;-09:00;America/Anchorage;Chandalar Lake
 WDA;YE;+03:00;Asia/Aden;Wadi Ain
 WDB;US;-09:00;America/Anchorage;Deep Bay
 WDG;US;-06:00;America/Chicago;Enid
-WDH;;+02:00;Africa/Windhoek;Windhoek
+WDH;NA;+02:00;Africa/Windhoek;Windhoek
 WDI;AU;+10:00;Australia/Brisbane;Wondai
 WDN;US;-08:00;America/Los_Angeles;Waldron Island
 WDR;US;-05:00;America/New_York;Winder
@@ -9240,7 +9240,7 @@ WUU;SS;+02:00;Africa/Juba;Wau
 WUV;PG;+10:00;Pacific/Port_Moresby;Wuvulu Island
 WUX;CN;+08:00;Asia/Shanghai;Wuxi
 WUZ;CN;+08:00;Asia/Shanghai;Wuzhou
-WVB;;+02:00;Africa/Windhoek;Walvis Bay
+WVB;NA;+02:00;Africa/Windhoek;Walvis Bay
 WVI;US;-08:00;America/Los_Angeles;Watsonville
 WVK;MG;+03:00;Indian/Antananarivo;Manakara
 WVL;US;-05:00;America/New_York;Waterville
