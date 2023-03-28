@@ -4,6 +4,7 @@ import json
 from pymongo import MongoClient
 from pprint import pprint
 
+data_url = '../data/'
 
 def load_flights(db):
   
@@ -11,13 +12,27 @@ def load_flights(db):
   # at the moment df_all_flights.csv is not avl in data folder, 
   # please change it to your local path to run this code
 
-  df = pd.read_csv('data/df_all_flights.csv', delimiter=';')
-
-  # Convert the DataFrame to a JSON formatted string
-  json_data = json.loads(df.to_json(orient='records'))
-
+  csv_files = ['df_flights_20232303_06.csv', 'df_flights_20232303_10.csv', 
+               'df_flights_20232303_14.csv']
+  
   collection = db.flights
-  collection.insert_many(json_data)
+  # in case you need to delete all flights data
+  collection.delete_many({})
+  num_docs = collection.count_documents({})
+  if num_docs == 0:
+    print('\nAll documents in flights collection have been deleted')
+
+  for file in csv_files:
+    df = pd.read_csv(data_url + file, delimiter=';')
+
+    # Convert the DataFrame to a JSON formatted string
+    json_data = json.loads(df.to_json(orient='records'))
+    collection.insert_many(json_data)
+
+  # count the total number of documents in the collection
+  num_docs = collection.count_documents({})
+
+  print("\n", num_docs, " documents have been inserted into flights collection")
 
 
 def get_flights_from_db(db):
@@ -62,11 +77,11 @@ def main():
 
     db = client.air_traffic_system
 
-    # load_flights(db)
+    load_flights(db)
     # get_flights_from_db(db)
 
     # load_positions(db)
-    get_positions_from_db(db)
+    # get_positions_from_db(db)
 
 
 
