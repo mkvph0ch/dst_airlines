@@ -102,7 +102,7 @@ if __name__ == "__main__":
     # load global variables
     globals.initialize()
     # load paths
-    current_path = Path.cwd()
+    current_path = Path(__file__).parent
     data_path = current_path.parent.joinpath('data')
 
     # create a connection to the PostgreSQL database
