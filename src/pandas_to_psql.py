@@ -8,6 +8,7 @@ import globals
 
 def delete_tables(cur, conn):
     cur.execute("""
+        DROP VIEW IF EXISTS v_airports_detailed;
         DROP TABLE IF EXISTS airports;
         DROP TABLE IF EXISTS cities;
         DROP TABLE IF EXISTS countries;
@@ -84,7 +85,7 @@ def create_airports_table_(cursor) -> None:
 
 def create_airports_detailed_view(cur) -> None:
     cur.execute("""
-        DROP TABLE IF EXISTS v_airports_detailed;
+        DROP VIEW IF EXISTS v_airports_detailed;
         CREATE OR REPLACE VIEW v_airports_detailed as 
             SELECT a.*,
                    c.CityName, 
