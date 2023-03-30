@@ -12,8 +12,7 @@ def load_flights(db):
   # at the moment df_all_flights.csv is not avl in data folder, 
   # please change it to your local path to run this code
 
-  csv_files = ['df_flights_20232303_06.csv', 'df_flights_20232303_10.csv', 
-               'df_flights_20232303_14.csv']
+  csv_files = ['df_flights_BER_PAR_MUC_20230326_20230402.csv']
   
   collection = db.flights
   # in case you need to delete all flights data
@@ -32,7 +31,7 @@ def load_flights(db):
   # count the total number of documents in the collection
   num_docs = collection.count_documents({})
 
-  print("\n", num_docs, " documents have been inserted into flights collection")
+  print(num_docs," documents have been inserted into flights collection")
 
 
 def get_flights_from_db(db):
@@ -82,7 +81,6 @@ def main():
 
     # load_positions(db)
     # get_positions_from_db(db)
-
 
 
 if __name__ == '__main__':
