@@ -82,6 +82,19 @@ def create_airports_table_(cursor) -> None:
         ); 
         """)
 
+def create_airports_detailed_view(cur) -> None:
+    cur.execute("""
+        DROP TABLE IF EXISTS v_airports_detailed;
+        CREATE OR REPLACE VIEW v_airports_detailed as 
+            SELECT a.*,
+                   c.CityName, 
+                   con.CountryName 
+            FROM airports a 
+                    JOIN cities c ON a.CityCode = c.CityCode 
+                    JOIN countries con ON con.CountryCode = c.CountryCode;
+            """  
+            )
+
 def insert_values(df, table, cur, conn):
     if len(df) > 0:
         df_columns = list(df)
@@ -162,7 +175,11 @@ if __name__ == "__main__":
 
     insert_values(df_airports,'airports',cur,conn)
 
-    #conn.commit()
+    # create airports detailed view
+
+    create_airports_detailed_view(cur)
+    conn.commit()
+    
     #Close the cursor and the connection
     cur.close()
     conn.close()
