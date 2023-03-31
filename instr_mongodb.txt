@@ -1,0 +1,39 @@
+I am using docker to install monfodb
+
+To do so you need:
+
+- docker installed
+- create your own or copy given docker-compose.yml file
+
+To run the container with mongodb:
+	cd [directory where you've put docker-compose.yml]
+	docker-compose up -d 
+	[sudo] docker exec -it my_mongo bash
+
+
+If you get an error that the port is busy:
+
+	sudo lsof -i :27017
+	sudo kill [PID]
+and try again
+
+
+*** You need mongodb container running to be able to connect to it from python code ***
+
+-------------------------------------------------------------
+Additional:
+Once in mongo shell:
+
+> show dbs
+> use air_traffic_system
+> show collections
+> db.flights.findOne()
+
+.. etc
+
+
+--------------------------------------------------------------
+
+If you run mongodb.py after launcing your mongodb as described, 
+you should get database and collections created and populated with data
+
