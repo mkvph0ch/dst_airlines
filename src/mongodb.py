@@ -53,7 +53,7 @@ def get_flights_from_db(db):
 def load_positions(db):
 
   # Load the CSV data into a pandas DataFrame
-  df = pd.read_csv(data_url + 'airlabs_response.csv')
+  df = pd.read_csv(data_url.joinpath('airlabs_response.csv'))
 
   # Convert the DataFrame to a JSON formatted string
   json_data = json.loads(df.to_json(orient='records'))
