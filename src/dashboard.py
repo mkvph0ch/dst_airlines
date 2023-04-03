@@ -6,38 +6,13 @@ import pandas as pd
 import globals
 import requests
 from mongodb import get_geopositions_from_airlabs
+import time
+from dash.dependencies import Input, Output
 
 app = dash.Dash(__name__)
 globals.initialize()
 
-def get_geopositions():
-    
-    globals.initialize()
-    my_params = {'api_key': globals.airlabs_token}
-
-    method = 'flights'
-    api_base = 'http://airlabs.co/api/v9/'
-
-    r = requests.get(api_base + method, params = my_params).json()
-
-    resp_list = r.get("response")
-
-    df = pd.json_normalize(resp_list)
-
-    return df
-
-_, df = get_geopositions_from_airlabs(globals.airlabs_token)
-
-fig = go.Figure(data=go.Scattergeo(
-    lon=df['lng'],
-    lat=df['lat'],
-    text=df['flight_number'],
-    mode='markers'
-))
-
-fig.update_layout(
-    geo_scope='world'
-)
+#_, df = get_geopositions_from_airlabs(globals.airlabs_token)
 
 app.layout = html.Div(children=[
     html.H1(children='DST Airlines'),
@@ -46,10 +21,36 @@ app.layout = html.Div(children=[
     '''),
 
     dcc.Graph(
-        id='example-map',
-        figure=fig
+        id='world-map'
+    ),
+
+    dcc.Interval(
+        id='interval-component',
+        interval=35*1000, # in milliseconds
+        n_intervals=0
     )
 ])
+
+# Multiple components can update everytime interval gets fired.
+@app.callback(Output('world-map', 'figure'),
+              Input('interval-component', 'n_intervals'))
+def update_graph_live(n):
+    _, df = get_geopositions_from_airlabs(globals.airlabs_token)
+
+    # Create the graph with subplots
+    fig = go.Figure(data=go.Scattergeo(
+        lon=df['lng'],
+        lat=df['lat'],
+        text=df['flight_number'],
+        mode='markers'
+    ))
+
+    fig.update_layout(
+        geo_scope='world',
+        title_text=f"Interval {n}"
+    )
+
+    return fig
 
 if __name__ == '__main__':    
     app.run_server(debug=True)
