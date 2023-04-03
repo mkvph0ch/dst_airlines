@@ -19,4 +19,5 @@ def initialize():
     username = 'your_psql_username'
     pwd = 'your_psql_password'
     port_id = 'your_psql_code'
+    airlabs_token = 'your_airlabs_token'
 ```
