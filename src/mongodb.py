@@ -1,10 +1,14 @@
 
 import pandas as pd
+import requests
 import json
 from pymongo import MongoClient
 from pprint import pprint
+from pathlib import Path
+import globals
 
-data_url = '../data/'
+current_path = Path(__file__).parent
+data_url = current_path.parent.joinpath('data')
 
 def load_flights(db):
   
@@ -22,7 +26,7 @@ def load_flights(db):
     print('\nAll documents in flights collection have been deleted')
 
   for file in csv_files:
-    df = pd.read_csv(data_url + file, delimiter=';')
+    df = pd.read_csv(data_url.joinpath(file), delimiter=';')
 
     # Convert the DataFrame to a JSON formatted string
     json_data = json.loads(df.to_json(orient='records'))
@@ -49,7 +53,7 @@ def get_flights_from_db(db):
 def load_positions(db):
 
   # Load the CSV data into a pandas DataFrame
-  df = pd.read_csv('data/airlabs_response.csv')
+  df = pd.read_csv(data_url + 'airlabs_response.csv')
 
   # Convert the DataFrame to a JSON formatted string
   json_data = json.loads(df.to_json(orient='records'))
@@ -65,6 +69,22 @@ def get_positions_from_db(db):
 
   # Print the retrieved document
   pprint(document,  indent=4)
+
+def get_geopositions_from_airlabs(airlabs_token):
+  my_params = {'api_key': airlabs_token}
+
+  method = 'flights'
+  api_base = 'http://airlabs.co/api/v9/'
+
+  r = requests.get(api_base + method, params = my_params).json()
+  resp_list = r.get("response")
+  df = pd.json_normalize(resp_list)
+
+  return resp_list, df
+
+def export_airlabs_response(resp_list):
+  df = pd.json_normalize(resp_list)
+  df.to_csv(data_url.joinpath('airlabs_response.csv'), sep=",", index=False)
 
 
 def main():
@@ -84,5 +104,6 @@ def main():
 
 
 if __name__ == '__main__':
+  globals.initialize()
   main()
 
