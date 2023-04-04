@@ -9,37 +9,37 @@ from mongodb import get_geopositions_from_airlabs, load_positions_from_airlabs
 import time
 import datetime
 from dash.dependencies import Input, Output
-​
+
 app = dash.Dash(__name__)
 globals.initialize()
-​
+
 #_, df = get_geopositions_from_airlabs(globals.airlabs_token)
-​
+
 app.layout = html.Div(children=[
     html.H1(children='DST Airlines'),
     html.Div(children='''
         This data was provided by the Airlabs API https://airlabs.co.
     '''),
     html.Div(children="This project was created by Moldir, Erntam, Sam, Marko"),
-​
+
     dcc.Graph(
         id='world-map'
     ),
-​
+
     dcc.Interval(
         id='interval-component',
         interval=35*1000, # in milliseconds
         n_intervals=0
     )
 ])
-​
+
 # Multiple components can update everytime interval gets fired.
 @app.callback(Output('world-map', 'figure'),
               [Input('interval-component', 'n_intervals')])
 def update_graph_live(n):
     _, df = get_geopositions_from_airlabs(globals.airlabs_token)
     last_timestamp=datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-​
+
     # Create the graph with subplots
     fig = go.Figure(data=go.Scattergeo(
         lon=df['lng'],
@@ -56,7 +56,7 @@ def update_graph_live(n):
         texttemplate='%{properties.name}', # use the country name from the GeoJSON file as text
         showlegend=True,
      ))
-​
+
     fig.update_layout(
         geo=dict(
             # landcolor="LightGreen",
@@ -79,8 +79,9 @@ def update_graph_live(n):
         ),
         title_text=f"Interval {n}. Last Update {last_timestamp}"
     )
-​
+
     return fig
-​
+
 if __name__ == '__main__':    
     app.run_server(debug=True)
+    
