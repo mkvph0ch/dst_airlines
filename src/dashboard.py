@@ -1,6 +1,6 @@
 import dash
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc
+from dash import html
 import plotly.graph_objects as go
 import pandas as pd
 import globals
@@ -44,11 +44,28 @@ def update_graph_live(n):
     fig = go.Figure(data=go.Scattergeo(
         lon=df['lng'],
         lat=df['lat'],
+        # text=df['airline_iata'] + df['flight_number'],
         text=df['flight_number'],
-        mode='markers'
-    ))
+        mode='markers',
+        # marker=dict(
+        #     color='blue'
+        # ),
+        geojson='https://raw.githubusercontent.com/python-visualization/folium/master/examples/data'
+                '/world-countries.json',
+        featureidkey='properties.name',
+        texttemplate='%{properties.name}', # use the country name from the GeoJSON file as text
+        showlegend=True,
+     ))
 
     fig.update_layout(
+        geo=dict(
+            # landcolor="LightGreen",
+            # oceancolor="LightBlue",
+            # showocean=True,
+            # showland=True,
+            showcountries=True,
+            countrycolor="Black"
+        ),
         geo_scope='world',
         autosize=False,
         width=1400,
