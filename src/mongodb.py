@@ -60,7 +60,6 @@ def load_positions(db):
 
   collection = db.positions
   collection.insert_many(json_data)
-
   
 def get_positions_from_db(db):
 
@@ -86,6 +85,16 @@ def export_airlabs_response(resp_list):
   df = pd.json_normalize(resp_list)
   df.to_csv(data_url.joinpath('airlabs_response.csv'), sep=",", index=False)
 
+def load_positions_from_airlabs(db, airlabs_token):
+
+  # Load the response of Airlabs into a pandas DataFrame
+  _, df = get_geopositions_from_airlabs(airlabs_token)
+
+  # Convert the DataFrame to a JSON formatted string
+  json_data = json.loads(df.to_json(orient='records'))
+
+  collection = db.positions
+  collection.insert_many(json_data)
 
 def main():
 
