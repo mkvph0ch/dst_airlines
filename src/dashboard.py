@@ -9,13 +9,19 @@ from mongodb import get_geopositions_from_airlabs, load_positions_from_airlabs
 import time
 import datetime
 from dash.dependencies import Input, Output
+import dash_bootstrap_components as dbc
 
-app = dash.Dash(__name__)
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.SUPERHERO])
+
 globals.initialize()
 
 #_, df = get_geopositions_from_airlabs(globals.airlabs_token)
 
-app.layout = html.Div(children=[
+app.layout = html.Div(
+    id='main-container',
+    style={'width': '100%', 'height': '100vh'},
+
+    children=[
     html.H1(children='DST Airlines'),
     html.Div(children='''
         This data was provided by the Airlabs API https://airlabs.co.
@@ -23,7 +29,8 @@ app.layout = html.Div(children=[
     html.Div(children="This project was created by Moldir, Erntam, Sam, Marko"),
 
     dcc.Graph(
-        id='world-map'
+        id='world-map',
+        style={'height': '100%'}
     ),
 
     dcc.Interval(
@@ -32,6 +39,7 @@ app.layout = html.Div(children=[
         n_intervals=0
     )
 ])
+
 
 # Multiple components can update everytime interval gets fired.
 @app.callback(Output('world-map', 'figure'),
@@ -59,23 +67,12 @@ def update_graph_live(n):
 
     fig.update_layout(
         geo=dict(
-            # landcolor="LightGreen",
-            # oceancolor="LightBlue",
-            # showocean=True,
-            # showland=True,
+            landcolor="LightGreen",
+            oceancolor="LightBlue",
+            showocean=True,
+            showland=True,
             showcountries=True,
             countrycolor="Black"
-        ),
-        geo_scope='world',
-        autosize=False,
-        width=1400,
-        height=800,
-        margin=dict(
-        l=200,
-        r=10,
-        b=10,
-        t=100,
-        pad=4
         ),
         title_text=f"Interval {n}. Last Update {last_timestamp}"
     )
