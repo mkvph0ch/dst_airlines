@@ -12,6 +12,7 @@ def initialize():
     global username
     global pwd
     global port_id
+    global airlabs_token
 
     my_token = 'your_personal_LH_token'
     hostname = 'your_hostname'
