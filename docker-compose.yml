@@ -9,6 +9,11 @@ services:
     ports:
       - "27017:27017"
 
+  mongo-express:
+    image: mongo-express
+    ports:
+    - "8080:8081"
+
   postgres:
     image: postgres:12.14
     restart: always
@@ -23,5 +28,7 @@ services:
       
 volumes:
   mongo-data:
+    driver: local
   postgres-data:
+    driver: local
 
