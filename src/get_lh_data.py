@@ -5,10 +5,11 @@ import globals
 def list_to_dataframe(lst):
     '''
     DESCRIPTION
-
+        Converts a nested json response into a pandas DataFrame
     INPUT
-
+        lst: list of json objects
     OUTPUT
+        df: pandas DataFrame
     '''
 
     df = pd.json_normalize(lst)
@@ -18,10 +19,11 @@ def list_to_dataframe(lst):
 def get_lh_data(function, *args, **kwargs):
     '''
     DESCRIPTION
-
+        Fetch all data from LH Public API 
     INPUT
-
+        function: An implemented function to fetch a certain data type from the LH Public API
     OUTPUT
+        result: return object of the called function
     '''
     condition = True
     result = []
@@ -40,10 +42,14 @@ def get_lh_data(function, *args, **kwargs):
 def request_countries(countryCode="", lang="en", limit=100, offset=0):
     '''
     DESCRIPTION
-
+        List all countries or one specific country. It is possible to request the response in a specific language.
     INPUT
-
+        countryCode: 2-letter ISO 3166-1 country code
+        lang: 2 letter ISO 3166-1 language code (default en)
+        limit: Number of records returned per request. Defaults to 20, maximum is 100 (if a value bigger than 100 is given, 100 will be taken)
+        offset: Number of records skipped. Defaults to 0
     OUTPUT
+        list of json objects
     '''
     country_url = "v1/mds-references/countries/"
 
@@ -61,10 +67,14 @@ def request_countries(countryCode="", lang="en", limit=100, offset=0):
 def request_cities(cityCode="", lang="en", limit=100, offset=0):
     '''
     DESCRIPTION
-
+        List all cities or one specific city. It is possible to request the response in a specific language.
     INPUT
-
+        cityCode: 3-letter IATA city code
+        lang: 2 letter ISO 3166-1 language code (default en)
+        limit: Number of records returned per request. Defaults to 20, maximum is 100 (if a value bigger than 100 is given, 100 will be taken)
+        offset: Number of records skipped. Defaults to 0
     OUTPUT
+        list of json objects
     '''
     city_url = "v1/mds-references/cities/" 
 
@@ -82,10 +92,16 @@ def request_cities(cityCode="", lang="en", limit=100, offset=0):
 def request_airports(airportCode="", lang="en", limit=100, offset=0, LHoperated=0, group="AllAirports"):
     '''
     DESCRIPTION
-
+        List all airports or one specific airport. All airports response is very large. It is possible to request the response in a specific language.
     INPUT
-
+        airportCode: 3-letter IATA airport code
+        lang: 2 letter ISO 3166-1 language code (default en)
+        limit: Number of records returned per request. Defaults to 20, maximum is 100 (if a value bigger than 100 is given, 100 will be taken)
+        offset: Number of records skipped. Defaults to 0
+        LHoperated: Restrict the results to locations with flights operated by LH (false=0, true=1)
+        group: Restrict the results to locations with flights operated by group
     OUTPUT
+        list of json objects
     '''
     airports_url = "v1/mds-references/airports/" #{airportCode} 3-letter IATA airport code
 
@@ -105,10 +121,13 @@ def request_airports(airportCode="", lang="en", limit=100, offset=0, LHoperated=
 def request_nearest_airports(latitude, longitude, lang="en"):
     '''
     DESCRIPTION
-
+        List the 5 closest airports to the given latitude and longitude, irrespective of the radius of the reference point.
     INPUT
-
+        latitude: Latitude in decimal format to at most 3 decimal places
+        longitude: Longitude in decimal format to at most 3 decimal places
+        lang: 2 letter ISO 3166-1 language code (default en)
     OUTPUT
+        list of json objects
     '''
     nearest_airports_url = "v1/mds-references/airports/nearest/" 
 
@@ -125,10 +144,13 @@ def request_nearest_airports(latitude, longitude, lang="en"):
 def request_airlines(airlineCode="", limit=100, offset=0):
     '''
     DESCRIPTION
-
+        List all airlines or one specific airline.
     INPUT
-
+        airlineCode: 2-character IATA airline/carrier code
+        limit: Number of records returned per request. Defaults to 20, maximum is 100 (if a value bigger than 100 is given, 100 will be taken)
+        offset: Number of records skipped. Defaults to 0
     OUTPUT
+        list of json objects
     '''
     airlines_url = "v1/mds-references/airlines/" #{airlineCode} 2-character IATA airline/carrier code
 
@@ -145,10 +167,13 @@ def request_airlines(airlineCode="", limit=100, offset=0):
 def request_aircraft(aircraftCode="", limit=100, offset=0):
     '''
     DESCRIPTION
-
+        List all aircraft types or one specific aircraft type.
     INPUT
-
+        aircraftCode: 3-character IATA aircraft code
+        limit: Number of records returned per request. Defaults to 20, maximum is 100 (if a value bigger than 100 is given, 100 will be taken)
+        offset: Number of records skipped. Defaults to 0
     OUTPUT
+        list of json objects
     '''
     aircraft_url = "v1/mds-references/aircraft/" 
 
@@ -169,7 +194,10 @@ def request_customer_flight_info(flightNumber, date, limit=100, offset=0):
     INPUT
         flightNumber: Flight number including carrier code and any suffix (e.g. 'LH400')
         date: The departure date (YYYY-MM-DD) in the local time of the departure airport
+        limit: Number of records returned per request. Defaults to 20, maximum is 100 (if a value bigger than 100 is given, 100 will be taken)
+        offset: Number of records skipped. Defaults to 0
     OUTPUT
+        list of json objects
     '''
     cust_flight_info_url = f"v1/operations/customerflightinformation/{flightNumber}/{date}"
 
@@ -190,7 +218,10 @@ def request_customer_flight_info_by_route(origin, destination, date, limit=100, 
         origin: 3-letter IATA airport (e.g. 'FRA')
         destination: 3-letter IATA airport code (e.g. 'JFK')
         date: Departure date (YYYY-MM-DD) in local time of departure airport
+        limit: Number of records returned per request. Defaults to 20, maximum is 100 (if a value bigger than 100 is given, 100 will be taken)
+        offset: Number of records skipped. Defaults to 0
     OUTPUT
+        list of json objects
     '''
     cust_flight_info_by_route_url = f"v1/operations/customerflightinformation/route/{origin}/{destination}/{date}"
 
@@ -213,6 +244,7 @@ def request_customer_flight_info_at_arrival(airportCode, fromDateTime, limit=100
         limit: Number of records returned per request. Defaults to 20, maximum is 100 (if a value bigger than 100 is given, 100 will be taken)
         offset: Number of records skipped. Defaults to 0
     OUTPUT
+        list of json objects
     '''
     cust_flight_info_by_arrival_airport_url = f"v1/operations/customerflightinformation/departures/{airportCode}/{fromDateTime}"
 
@@ -235,6 +267,7 @@ def request_customer_flight_info_at_departure(airportCode, fromDateTime, limit=1
         limit: Number of records returned per request. Defaults to 20, maximum is 100 (if a value bigger than 100 is given, 100 will be taken)
         offset: Number of records skipped. Defaults to 0
     OUTPUT
+        list of json objects
     '''
     cust_flight_info_by_departure_airport_url = f"v1/operations/customerflightinformation/departures/{airportCode}/{fromDateTime}"
 
@@ -252,8 +285,14 @@ def request_flight_schedules(origin, destination, fromDateTime, directFlights=0,
     DESCRIPTION
         Scheduled flights between given airports on a given date.
     INPUT
-
+        origin: Departure airport. 3-letter IATA airport code (e.g. 'ZRH')
+        destination: Destination airport. 3-letter IATA airport code (e.g. 'FRA')
+        fromDateTime: Local departure date and optionally departure time (YYYY-MM-DD or YYYY-MM-DDTHH:mm). When not provided, time is assumed to be 00:01
+        directFlights: Show only direct flights (false=0, true=1). Default is false
+        limit: Number of records returned per request. Defaults to 20, maximum is 100 (if a value bigger than 100 is given, 100 will be taken)
+        offset: Number of records skipped. Defaults to 0
     OUTPUT
+        list of json objects
     '''
 
     flight_schedules_url = f"v1/operations/schedules/{origin}/{destination}/{fromDateTime}"
