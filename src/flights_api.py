@@ -31,7 +31,7 @@ def get_airport_location(airport_code):
                             port=globals.port_id)
 
         cur = conn.cursor()
-        sql_query = f"SELECT CountryName, CityName, AirportName, LocationType FROM v_airports_detailed WHERE AirportCode = upper('{airport_code}');"
+        sql_query = f"SELECT CountryName, CityName, AirportName, LocationType FROM mv_airports_detailed WHERE AirportCode = upper('{airport_code}');"
         cur.execute(sql_query)
         results = cur.fetchall()
 
