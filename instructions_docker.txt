@@ -33,3 +33,6 @@ If you get an error that the port is busy (27017 - for mongo, 5432 - for postgre
 
 and try again docker-compose up -d 
 
+----------------------------------------------------------------
+
+To correctly shut down docker use docker-compose down afterwards, to avoid busy port issue
