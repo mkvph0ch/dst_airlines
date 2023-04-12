@@ -3,7 +3,7 @@ from dash import dcc
 from dash import html
 import plotly.graph_objects as go
 import pandas as pd
-import globals
+#import globals
 import requests
 from mongodb import get_geopositions_from_airlabs, load_positions_from_airlabs
 import time
@@ -13,7 +13,7 @@ import dash_bootstrap_components as dbc
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.SUPERHERO])
 
-globals.initialize()
+#globals.initialize()
 
 #_, df = get_geopositions_from_airlabs(globals.airlabs_token)
 
@@ -45,7 +45,7 @@ app.layout = html.Div(
 @app.callback(Output('world-map', 'figure'),
               [Input('interval-component', 'n_intervals')])
 def update_graph_live(n):
-    _, df = get_geopositions_from_airlabs(globals.airlabs_token)
+    _, df = get_geopositions_from_airlabs()
     last_timestamp=datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     # Create the graph with subplots

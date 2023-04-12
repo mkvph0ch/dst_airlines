@@ -70,8 +70,11 @@ def get_positions_from_db(db):
   # Print the retrieved document
   pprint(document,  indent=4)
 
-def get_geopositions_from_airlabs(airlabs_token, export=0):
-  my_params = {'api_key': airlabs_token}
+def get_geopositions_from_airlabs(export=0):
+
+  globals.initialize()
+
+  my_params = {'api_key': globals.airlabs_token}
 
   method = 'flights'
   api_base = 'http://airlabs.co/api/v9/'
@@ -86,10 +89,10 @@ def get_geopositions_from_airlabs(airlabs_token, export=0):
 
   return resp_list, df
 
-def load_positions_from_airlabs(db, airlabs_token):
+def load_positions_from_airlabs(db):
 
   # Load the response of Airlabs into a pandas DataFrame
-  _, df = get_geopositions_from_airlabs(airlabs_token)
+  _, df = get_geopositions_from_airlabs()
 
   # Convert the DataFrame to a JSON formatted string
   json_data = json.loads(df.to_json(orient='records'))
@@ -98,7 +101,7 @@ def load_positions_from_airlabs(db, airlabs_token):
   collection.delete_many({})
   collection.insert_many(json_data)
 
-def main_connect_mongodb():
+def main_connect_mongodb(collection: str, function, *args, **kwargs):
 
   # INPUT function, *args, **kwargs
   # Connect to the MongoDB client and insert the data into a collection
@@ -106,17 +109,16 @@ def main_connect_mongodb():
 
   with MongoClient("mongodb://localhost:27017/") as client:
 
-    db = client.air_traffic_system
-
-    load_flights(db)
-    # function(offset=init_offset, *args, **kwargs)
+    db = getattr(client, collection) # equal to db = client.air_traffic_system
+    
+    function(db=db, *args, **kwargs)
     # get_flights_from_db(db)
-
+    # load_flights(db)
     # load_positions(db)
     # get_positions_from_db(db)
 
 
 if __name__ == '__main__':
   globals.initialize()
-  main_connect_mongodb()
+  main_connect_mongodb("air_traffic_system", load_flights)
 
