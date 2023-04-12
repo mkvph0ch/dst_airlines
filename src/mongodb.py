@@ -53,14 +53,25 @@ def get_flights_from_db(db):
 
 def load_positions(db):
 
+  collection = db.positions
+
+  collection.delete_many({})
+  num_docs = collection.count_documents({})
+  if num_docs == 0:
+    print('\nAll documents in positions collection have been deleted')
+
   # Load the CSV data into a pandas DataFrame
   df = pd.read_csv(data_url.joinpath('airlabs_response.csv'))
-
   # Convert the DataFrame to a JSON formatted string
   json_data = json.loads(df.to_json(orient='records'))
 
-  collection = db.positions
   collection.insert_many(json_data)
+
+  # count the total number of documents in the collection
+  num_docs = collection.count_documents({})
+
+  print(num_docs," documents have been inserted into positions collection")
+
   
 def get_positions_from_db(db):
 
