@@ -10,6 +10,7 @@ import time
 import datetime
 from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
+import re
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.SUPERHERO])
 
@@ -47,13 +48,23 @@ app.layout = html.Div(
 def update_graph_live(n):
     _, df = get_geopositions_from_airlabs()
     last_timestamp=datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    
+    # Drop rows where either airline_iata or flight_number is missing
+    df = df.dropna(subset=['airline_iata', 'flight_number'])
+
+    # checking if the values of flight number match the pattern
+    pattern = r'^[a-zA-Z0-9]{2}\d{3,4}$'
+    mask = ((df['airline_iata'] + df['flight_number']).str.contains(pattern, na=False)) | (df['flight_iata'].str.contains(pattern, na=False))
+    df = df[mask]
+    df['flight_number_final'] = df['airline_iata'] + df['flight_number']
+    df['flight_number_final'][~df['flight_number_final'].str.contains(pattern, na=False)] = df['flight_iata']
 
     # Create the graph with subplots
     fig = go.Figure(data=go.Scattergeo(
         lon=df['lng'],
         lat=df['lat'],
         # text=df['airline_iata'] + df['flight_number'],
-        text=df['flight_number'],
+        text=df['flight_number_final'],
         mode='markers',
         # marker=dict(
         #     color='blue'
