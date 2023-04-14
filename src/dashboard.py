@@ -29,6 +29,11 @@ app.layout = html.Div(
     '''),
     html.Div(children="This project was created by Moldir, Erntam, Sam, Marko"),
 
+    dcc.Dropdown(['All flights', 'Commericial passenger flights only'],
+                 'All flights',
+                 id='flight-type-dropdown'
+    ),
+
     dcc.Graph(
         id='world-map',
         style={'height': '100%'}
@@ -78,12 +83,14 @@ def update_graph_live(n):
 
     fig.update_layout(
         geo=dict(
-            landcolor="LightGreen",
-            oceancolor="LightBlue",
-            showocean=True,
             showland=True,
+            landcolor="LightGreen",
+            showocean=True,
+            oceancolor="LightBlue",
             showcountries=True,
-            countrycolor="Black"
+            countrycolor="Black",
+            showsubunits=True, 
+            subunitcolor="Blue"
         ),
         title_text=f"Interval {n}. Last Update {last_timestamp}"
     )
