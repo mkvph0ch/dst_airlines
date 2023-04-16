@@ -129,37 +129,65 @@ def main_connect_mongodb(collection: str, function, *args, **kwargs):
     # get_positions_from_db(db)
 
 def _connect_mongo(host, port, username, password, db):
-    """ A util for making a connection to mongo """
+  """ A util for making a connection to mongo """
 
-    if username and password:
-        mongo_uri = 'mongodb://%s:%s@%s:%s/%s' % (username, password, host, port, db)
-        conn = MongoClient(mongo_uri)
-    else:
-        conn = MongoClient(host, port)
+  if username and password:
+      mongo_uri = 'mongodb://%s:%s@%s:%s/%s' % (username, password, host, port, db)
+      conn = MongoClient(mongo_uri)
+  else:
+      conn = MongoClient(host, port)
 
 
-    return conn[db]
+  return conn[db]
 
 
 def read_mongo(db, collection, query={}, host='localhost', port=27017, username=None, password=None, no_id=True):
-    """ Read from Mongo and Store into DataFrame """
+  """ Read from Mongo and Store into DataFrame """
 
-    # Connect to MongoDB
-    db = _connect_mongo(host=host, port=port, username=username, password=password, db=db)
+  # Connect to MongoDB
+  db = _connect_mongo(host=host, port=port, username=username, password=password, db=db)
 
-    # Make a query to the specific DB and Collection
-    cursor = db[collection].find(query)
+  # Make a query to the specific DB and Collection
+  cursor = db[collection].find(query)
 
-    # Expand the cursor and construct the DataFrame
-    df =  pd.DataFrame(list(cursor))
+  # Expand the cursor and construct the DataFrame
+  df =  pd.DataFrame(list(cursor))
 
-    # Delete the _id
-    if no_id:
-        del df['_id']
+  # Delete the _id
+  if no_id:
+      del df['_id']
 
-    return df
+  return df
+
+def write_mongo(df, db, collection, query={}, host='localhost', port=27017, username=None, password=None):
+  # Connect to MongoDB
+  db = _connect_mongo(host=host, port=port, username=username, password=password, db=db)
+
+  # Convert the DataFrame to a JSON formatted string
+  json_data = json.loads(df.to_json(orient='records'))
+
+  # Make a query to the specific DB and Collection
+  cursor = db[collection]
+
+  # delete all
+  cursor.delete_many({})
+
+  # insert DataFrame to mongodb
+  cursor.insert_many(json_data)
+
+def print_one_flight_from_mongo(db, collection, query={}, host='localhost', port=27017, username=None, password=None):
+
+  # Connect to MongoDB
+  db = _connect_mongo(host=host, port=port, username=username, password=password, db=db)
+
+  # Make a query to the specific DB and Collection
+  cursor = db[collection].find_one(query)
+
+  # Print the retrieved document
+  pprint(cursor,  indent=4)
 
 if __name__ == '__main__':
   globals.initialize()
+  #print_one_flight_from_mongo(db='air_traffic_system', collection='flights')
   main_connect_mongodb("air_traffic_system", load_flights)
 
