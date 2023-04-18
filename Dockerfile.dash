@@ -1,6 +1,8 @@
-FROM ubuntu:22.04
-RUN apt-get update && apt-get install -y python3 python3-pip 
-COPY . /dst_airlines/
+# Use a base image with Python 3.8 installed
+FROM python:3.8-slim-buster
 WORKDIR /dst_airlines
+COPY . /dst_airlines/
 RUN pip3 install -r requirements.txt
-CMD ["python3", "src/dashboard.py"]
+CMD ["python3", "src/dashboard_mongo.py"]
+# Expose port 8050 for the dashboard
+EXPOSE 8050

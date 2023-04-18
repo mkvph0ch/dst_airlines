@@ -86,7 +86,7 @@ def create_airports_table_(cursor) -> None:
 def create_airports_detailed_view(cur) -> None:
     cur.execute("""
         DROP MATERIALIZED VIEW IF EXISTS mv_airports_detailed;
-        CREATE OR REPLACE MATERIALIZED VIEW mv_airports_detailed as 
+        CREATE OR REPLACE VIEW mv_airports_detailed as 
             SELECT a.*,
                    c.CityName, 
                    con.CountryName 
@@ -177,8 +177,9 @@ if __name__ == "__main__":
     insert_values(df_airports,'airports',cur,conn)
 
     # create airports detailed view
+    with conn.cursor() as cursor:
+        create_airports_detailed_view(cursor)
 
-    create_airports_detailed_view(cur)
     conn.commit()
     
     #Close the cursor and the connection

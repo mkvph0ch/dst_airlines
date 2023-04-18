@@ -21,6 +21,7 @@ services:
   postgres:
     image: postgres:12.14
     restart: always
+    container_name: my_postgres
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
@@ -33,14 +34,26 @@ services:
       - my_network
 
   fastapi:
-    image: dst_airlines_api:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: my_fastapi
+    depends_on:
+      - mongodb
+      - postgres
     ports:
       - "8000:8000"
     networks:
       - my_network
 
-  dash:
-    image: dst_airlines_dash:latest
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.dash
+    container_name: my_dash
+    depends_on:
+      - mongodb
+      - postgres
     ports:
       - "8050:8050"
     networks:
@@ -53,3 +66,5 @@ volumes:
 networks:
   my_network:
     driver: bridge
+
+

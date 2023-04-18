@@ -21,7 +21,7 @@ def load_flights(db):
   
   collection = db.flights
   # in case you need to delete all flights data
-  collection.delete_many({})
+  # collection.delete_many({})
   num_docs = collection.count_documents({})
   if num_docs == 0:
     print('\nAll documents in flights collection have been deleted')
@@ -112,15 +112,15 @@ def load_positions_from_airlabs(db):
   collection.delete_many({})
   collection.insert_many(json_data)
 
-def main_connect_mongodb(collection: str, function, *args, **kwargs):
+def main_connect_mongodb(db_name: str, function, *args, **kwargs):
 
   # INPUT function, *args, **kwargs
   # Connect to the MongoDB client and insert the data into a collection
   # with clause makes sure client is properly closed after it has been used
 
-  with MongoClient("mongodb://localhost:27017/") as client:
+  with MongoClient("mongodb://"+ globals.mongohost +":"+globals.mongoport+"/") as client:
 
-    db = getattr(client, collection) # equal to db = client.air_traffic_system
+    db = getattr(client, db_name) # equal to db = client.air_traffic_system
     
     function(db=db, *args, **kwargs)
     # get_flights_from_db(db)
@@ -130,18 +130,22 @@ def main_connect_mongodb(collection: str, function, *args, **kwargs):
 
 def _connect_mongo(host, port, username, password, db):
   """ A util for making a connection to mongo """
+  
+  # connecting to mongodb container
+  conn = MongoClient("mongodb://mongodb:27017/")
+  db = conn["air_traffic_system"]
 
-  if username and password:
-      mongo_uri = 'mongodb://%s:%s@%s:%s/%s' % (username, password, host, port, db)
-      conn = MongoClient(mongo_uri)
-  else:
-      conn = MongoClient(host, port)
+  # if username and password:
+  #     mongo_uri = 'mongodb://%s:%s@%s:%s/%s' % (username, password, host, port, db)
+  #     conn = MongoClient(mongo_uri)
+  # else:
+  #     conn = MongoClient(host, port)
+
+  # return conn[db]
+  return db
 
 
-  return conn[db]
-
-
-def read_mongo(db, collection, query={}, host='localhost', port=27017, username=None, password=None, no_id=True):
+def read_mongo(db, collection, query={}, host='mongodb', port=27017, username=None, password=None, no_id=True):
   """ Read from Mongo and Store into DataFrame """
 
   # Connect to MongoDB
@@ -159,7 +163,7 @@ def read_mongo(db, collection, query={}, host='localhost', port=27017, username=
 
   return df
 
-def write_mongo(df, db, collection, query={}, host='localhost', port=27017, username=None, password=None):
+def write_mongo(df, db, collection, query={}, host='mongodb', port=27017, username=None, password=None):
   # Connect to MongoDB
   db = _connect_mongo(host=host, port=port, username=username, password=password, db=db)
 
@@ -175,7 +179,7 @@ def write_mongo(df, db, collection, query={}, host='localhost', port=27017, user
   # insert DataFrame to mongodb
   cursor.insert_many(json_data)
 
-def print_one_flight_from_mongo(db, collection, query={}, host='localhost', port=27017, username=None, password=None):
+def print_one_flight_from_mongo(db, collection, query={}, host='mongodb', port=27017, username=None, password=None):
 
   # Connect to MongoDB
   db = _connect_mongo(host=host, port=port, username=username, password=password, db=db)
@@ -190,4 +194,5 @@ if __name__ == '__main__':
   globals.initialize()
   #print_one_flight_from_mongo(db='air_traffic_system', collection='flights')
   main_connect_mongodb("air_traffic_system", load_flights)
+  main_connect_mongodb("air_traffic_system", load_positions_from_airlabs)
 

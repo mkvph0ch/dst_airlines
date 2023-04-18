@@ -24,7 +24,7 @@ def get_airport_location(airport_code):
     
     try:
         # create a connection to the PostgreSQL database
-        conn = psycopg2.connect(host=globals.hostname,
+        conn = psycopg2.connect(host="postgres",
                             dbname=globals.database,
                             user=globals.username,
                             password=globals.pwd,
@@ -63,7 +63,7 @@ def get_flights_count(airport_code,date) -> Dict[str, int]:
         # The date string is not in the expected format
         raise HTTPException(status_code=400, detail="Incorrect date format, should be YYYY-MM-DD")
 
-    with MongoClient("mongodb://localhost:27017/") as client:
+    with MongoClient("mongodb://mongodb:27017/") as client:
       db = client.air_traffic_system
 
       collection = db.flights
@@ -82,7 +82,7 @@ def get_flights_count(airport_code,date) -> Dict[str, int]:
 
 @api.get("/flights/random")
 def get_random_flight():
-    with MongoClient("mongodb://localhost:27017/") as client:
+    with MongoClient("mongodb://mongodb:27017/") as client:
         db = client.air_traffic_system
         collection = db.flights
         count = collection.count_documents({}) # Get total number of documents
@@ -105,7 +105,7 @@ def get_flights_info_by_departure_airportcode_and_date(departure_airportcode, ac
         # The date string is not in the expected format
         raise HTTPException(status_code=400, detail="Incorrect date format, should be YYYY-MM-DD")
 
-    with MongoClient("mongodb://localhost:27017/") as client:
+    with MongoClient("mongodb://mongodb:27017/") as client:
         db = client.air_traffic_system
         collection = db.flights
         documents = collection.find()
@@ -140,7 +140,7 @@ def get_flights_info_by_arrival_airportcode_and_date(arrival_airportcode,  actua
         raise HTTPException(status_code=400, detail="Incorrect date format, should be YYYY-MM-DD")
 
 
-    with MongoClient("mongodb://localhost:27017/") as client:
+    with MongoClient("mongodb://mongodb:27017/") as client:
         db = client.air_traffic_system
         collection = db.flights
         documents = collection.find()
@@ -171,7 +171,7 @@ def get_flights_info_by_flight_number(flight_number):
         # The flight number does not match the required pattern
         raise HTTPException(status_code=400, detail="Invalid flight number, should be in the format of 2 letters followed by 4 digits")
 
-    with MongoClient("mongodb://localhost:27017/") as client:
+    with MongoClient("mongodb://mongodb:27017/") as client:
         db = client.air_traffic_system
         collection = db.flights
         documents = collection.find()
