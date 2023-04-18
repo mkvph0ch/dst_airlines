@@ -32,6 +32,20 @@ services:
     networks:
       - my_network
 
+  fastapi:
+    image: dst_airlines_api:latest
+    ports:
+      - "8000:8000"
+    networks:
+      - my_network
+
+  dash:
+    image: dst_airlines_dash:latest
+    ports:
+      - "8050:8050"
+    networks:
+      - my_network
+
 volumes:
   mongo-data:
   postgres-data:
