@@ -132,17 +132,17 @@ def _connect_mongo(host, port, username, password, db):
   """ A util for making a connection to mongo """
   
   # connecting to mongodb container
-  conn = MongoClient("mongodb://mongodb:27017/")
-  db = conn["air_traffic_system"]
+  #conn = MongoClient("mongodb://mongodb:27017/")
+  #db = conn["air_traffic_system"]
 
-  # if username and password:
-  #     mongo_uri = 'mongodb://%s:%s@%s:%s/%s' % (username, password, host, port, db)
-  #     conn = MongoClient(mongo_uri)
-  # else:
-  #     conn = MongoClient(host, port)
+  if username and password:
+    mongo_uri = 'mongodb://%s:%s@%s:%s/%s' % (username, password, host, port, db)
+    conn = MongoClient(mongo_uri)
+  else:
+    conn = MongoClient(host, port)
 
-  # return conn[db]
-  return db
+  return conn[db]
+  #return db
 
 
 def read_mongo(db, collection, query={}, host='mongodb', port=27017, username=None, password=None, no_id=True):

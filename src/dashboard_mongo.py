@@ -52,9 +52,9 @@ app.layout = html.Div(
               [Input('interval-component', 'n_intervals')])
 def update_graph_live(n):
     _, df = get_geopositions_from_airlabs()
-    write_mongo(df=df, db='air_traffic_system', collection='positions')
+    write_mongo(df=df, db='air_traffic_system', collection='positions', host='localhost')
 
-    df = read_mongo(db='air_traffic_system', collection='positions')
+    df = read_mongo(db='air_traffic_system', collection='positions', host='localhost')
 
     last_timestamp=datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
