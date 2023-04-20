@@ -1,5 +1,6 @@
 # Use a base image with Python 3.8 installed
 FROM python:3.8-slim-buster
+ENV platform='docker'
 WORKDIR /dst_airlines
 COPY . /dst_airlines/
 COPY src/globals.py ./src/globals.py
