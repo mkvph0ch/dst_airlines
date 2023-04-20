@@ -32,6 +32,8 @@ services:
       - postgres-data:/var/lib/postgresql/data
     networks:
       - my_network
+    #extra_hosts:
+      #- "host.docker.internal:host-gateway"
 
   fastapi:
     build:
