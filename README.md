@@ -27,13 +27,13 @@ def initialize():
 # Documentation for DST_Airlines Dashboard and FastAPI. 
 
 
-1. Introduction: 
+## 1. Introduction: 
 
 
 Welcome to the DST_Airlines Dashboard and FastAPI documentation. This guide is designed to help you get started with our dashboard quickly and easily. Our dashboard is a powerful tool that allows you to track aircraft in real-time and access information about flights all over the world. The dashboard is designed to work well on different operating systems. Our FastAPI allows you to get more information on flights. 
 
 
-2. Source Code: 
+## 2. Source Code: 
 
 
 All of our source code can be found on Github at 
@@ -42,10 +42,10 @@ All of our source code can be found on Github at
 https://github.com/mkvph0ch/dst_airlines. You can access our code and contribute to it if you like. 
 
 
-3. Setup: 
+## 3. Setup: 
 
 
-Step 1: Cloning Github Repo 
+### Step 1: Cloning Github Repo 
 
 
 To get started with our dashboard, you need to clone our Github repository to your local machine. Open your terminal and run the command: 
@@ -62,7 +62,7 @@ git clone https://github.com/mkvph0ch/dst_airlines.git
 This will download our code to your local machine. 
 
 
-Step 2: Using Docker Compose 
+### Step 2: Using Docker Compose 
 
 
 Our dashboard uses Docker Compose to manage its containers. Open your terminal and navigate to the dst_airlines directory. Then run the following command: 
@@ -77,7 +77,7 @@ Our dashboard uses Docker Compose to manage its containers. Open your terminal a
 This will start the containers. It may take some time to complete. 
 
 
-Step 3: Checking Containers 
+### Step 3: Checking Containers 
 
 
 After the containers are running, you need to check if all 4 containers are up and running. Run the following command: 
@@ -92,7 +92,7 @@ After the containers are running, you need to check if all 4 containers are up a
 This will list all the running containers. You should see 4 containers running. 
 
 
-Step 4: Loading Initial Data 
+### Step 4: Loading Initial Data 
 
 Now that the containers are running, you need to load the initial data into the databases. For that, you need to run two Python scripts: _pandas_to_sql.py _and _mongodb.py_. Change the hostname for databases in globals.py if needed.
 
@@ -110,7 +110,7 @@ Run the following commands to load initial data into the databases:
 These scripts will load static data like cities, countries, airports, etc. into the Postgres database and flights and positions data into the MongoDB database. 
 
 
-Step 5: Running the Dashboard 
+### Step 5: Running the Dashboard 
 
 
 After the data is loaded, you need to find the IP address used by the dashboard. Run the following command: 
@@ -125,22 +125,24 @@ After the data is loaded, you need to find the IP address used by the dashboard.
 This will give you the IP address used by the dashboard. Open your web browser and go to _dash_container_IP:8050 _to access our dashboard. 
 
 
-Step 6: Running the FastAPI 
+### Step 6: Running the FastAPI 
 
 
-`docker inspect my_fastapi | grep IPAddress `Open your web browser and go to DASH_IP:8000 to access our FastAPI.
+`docker inspect my_fastapi | grep IPAddress `
+
+Open your web browser and go to DASH_IP:8000 to access our FastAPI.
 
 
-4. Usage: 
+## 4. Usage: 
 
 
-Dashboard. 
+### Dashboard. 
 
 
 Our dashboard allows you to track flights in real-time and access information about flights all over the world. By clicking on each point on the map, you can see the flight number and current geopositions. 
 
 
-FastAPI. 
+### FastAPI. 
 
 
 All endpoints are described in docs/flights_api.rst. 
@@ -156,7 +158,7 @@ All endpoints are described in docs/flights_api.rst.
 
 
 
-5. Conclusion: 
+## 5. Conclusion: 
 
 
 We hope this guide has helped you get started with our DST_Airlines Dashboard and FastAPI. If you have any questions or feedback, please contact us by email <span style="text-decoration:underline;">support@dst_flights_official.de</span>
