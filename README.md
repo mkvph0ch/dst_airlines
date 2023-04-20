@@ -80,7 +80,7 @@ This will start the containers. It may take some time to complete.
 ### Step 3: Checking Containers 
 
 
-After the containers are running, you need to check if all 4 containers are up and running. Run the following command: 
+Run the following command to check if all 4 containers are up and running:
 
 
 ```
@@ -89,7 +89,7 @@ After the containers are running, you need to check if all 4 containers are up a
 
 
 
-This will list all the running containers. You should see 4 containers running. 
+You should see 4 containers: my_mongo, my_postgres, my_dashboard, my_fastapi.
 
 
 ### Step 4: Loading Initial Data 
@@ -130,7 +130,7 @@ This will give you the IP address used by the dashboard. Open your web browser a
 
 `docker inspect my_fastapi | grep IPAddress `
 
-Open your web browser and go to DASH_IP:8000 to access our FastAPI.
+Open your web browser and go to fastapi_container_IP:8000 to access our FastAPI.
 
 
 ## 4. Usage: 
