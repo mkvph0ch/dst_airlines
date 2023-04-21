@@ -36,11 +36,11 @@ def initialize():
     if os.environ.get('platform') == "docker":
         mongohost = 'mongodb' # hostname MongoDB
         hostname = 'postgres' # hostname pSQL
-        port_id = '8001' # port pSQL
+        port_id = '5432' # port pSQL
     else:
         mongohost = 'localhost' # hostname MongoDB
         hostname = 'localhost' # hostname pSQL
-        port_id = '5432' # port pSQL
+        port_id = '8001' # port pSQL
 ```
 
 
