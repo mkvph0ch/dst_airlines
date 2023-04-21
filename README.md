@@ -5,6 +5,8 @@ final project for data engineering bootcamp jan2023 datascientest
 In order to run the code properly, please provide a globals.py inside "./src" folder in this form
 
 ```py
+import os
+
 def initialize(): 
     global my_token
     global hostname
@@ -13,14 +15,32 @@ def initialize():
     global pwd
     global port_id
     global airlabs_token
+    global mapbox_token
+    global mongohost
+    global mongoport
 
-    my_token = 'your_personal_LH_token'
-    hostname = 'your_hostname'
-    database = 'your_database_name' # e.g. dst_airlines
-    username = 'your_psql_username'
-    pwd = 'your_psql_password'
-    port_id = 'your_psql_code'
-    airlabs_token = 'your_airlabs_token'
+    # LH Token
+    my_token = 'your_personal_LH_token' 
+    
+    # PostreSQL
+    database = 'dst_airlines'
+    username = 'postgres'
+    pwd = 'postgres'
+
+    # Airlabs
+    airlabs_token = 'your_personal_airlabs_token'
+
+    # MongoDB
+    mongoport = '27017'
+
+    if os.environ.get('platform') == "docker":
+        mongohost = 'mongodb' # hostname MongoDB
+        hostname = 'postgres' # hostname pSQL
+        port_id = '8001' # port pSQL
+    else:
+        mongohost = 'localhost' # hostname MongoDB
+        hostname = 'localhost' # hostname pSQL
+        port_id = '5432' # port pSQL
 ```
 
 
