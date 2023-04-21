@@ -1,9 +1,10 @@
 # Use a base image with Python 3.8 installed
 FROM python:3.8-slim-buster
 ENV platform='docker'
-WORKDIR /dst_airlines
 COPY . /dst_airlines/
-RUN pip3 install -r requirements.txt
+
+RUN pip3 install -r /dst_airlines/requirements.txt
 # Expose port 8050 for the dashboard
 EXPOSE 8050
-CMD ["python3", "src/dashboard_mongo.py"]
+WORKDIR /dst_airlines/src
+CMD ["python3", "dashboard_mongo.py"]

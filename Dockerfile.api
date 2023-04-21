@@ -1,11 +1,12 @@
 # Use a base image with Python 3.8 installed
 FROM python:3.8-slim-buster
 ENV platform='docker'
-WORKDIR /dst_airlines
 COPY . /dst_airlines/
-COPY src/globals.py ./src/globals.py
+
+#COPY src/globals.py ./src/globals.py
 # install uvicorn
-RUN pip3 install -r requirements.txt
+RUN pip3 install -r /dst_airlines/requirements.txt
 RUN pip3 install uvicorn
 EXPOSE 8000
-CMD ["uvicorn", "src.flights_api:api", "--host", "0.0.0.0", "--port", "8000"]
+WORKDIR /dst_airlines/src
+CMD ["uvicorn", "flights_api:api", "--host", "0.0.0.0", "--port", "8000"]

@@ -3,7 +3,7 @@ from dash import dcc
 from dash import html
 import plotly.graph_objects as go
 import pandas as pd
-#import globals
+import globals
 import requests
 from mongodb import get_geopositions_from_airlabs, write_mongo, read_mongo
 import time
@@ -14,7 +14,7 @@ import re
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.SUPERHERO])
 
-#globals.initialize()
+globals.initialize()
 
 #_, df = get_geopositions_from_airlabs(globals.airlabs_token)
 
@@ -52,9 +52,9 @@ app.layout = html.Div(
               [Input('interval-component', 'n_intervals')])
 def update_graph_live(n):
     _, df = get_geopositions_from_airlabs()
-    write_mongo(df=df, db='air_traffic_system', collection='positions', host='localhost')
+    write_mongo(df=df, db='air_traffic_system', collection='positions', host=globals.mongohost)
 
-    df = read_mongo(db='air_traffic_system', collection='positions', host='localhost')
+    df = read_mongo(db='air_traffic_system', collection='positions', host=globals.mongohost)
 
     last_timestamp=datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
