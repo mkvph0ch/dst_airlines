@@ -39,6 +39,11 @@ app.layout = html.Div(
         style={'height': '100%'}
     ),
 
+    html.Div(
+        id='flight-info',
+        style={'position': 'absolute', 'top': 0, 'right': 0, 'padding': '10px'}
+    ), 
+
     dcc.Interval(
         id='interval-component',
         interval=35*1000, # in milliseconds
@@ -64,9 +69,10 @@ def update_graph_live(n):
     # checking if the values of flight number match the pattern
     pattern = r'^[a-zA-Z0-9]{2}\d{3,4}$'
     mask = ((df['airline_iata'] + df['flight_number']).str.contains(pattern, na=False)) | (df['flight_iata'].str.contains(pattern, na=False))
-    df = df[mask]
+    df = df.loc[mask, :].copy()
     df['flight_number_final'] = df['airline_iata'] + df['flight_number']
-    df['flight_number_final'][~df['flight_number_final'].str.contains(pattern, na=False)] = df['flight_iata']
+    df.loc[~df['flight_number_final'].str.contains(pattern, na=False), 'flight_number_final'] = df['flight_iata']
+
 
     # Create the graph with subplots
     fig = go.Figure(data=go.Scattergeo(
@@ -75,9 +81,9 @@ def update_graph_live(n):
         # text=df['airline_iata'] + df['flight_number'],
         text=df['flight_number_final'],
         mode='markers',
-        # marker=dict(
-        #     color='blue'
-        # ),
+        marker=dict(
+            color='blue'
+        ),
         geojson='https://raw.githubusercontent.com/python-visualization/folium/master/examples/data'
                 '/world-countries.json',
         featureidkey='properties.name',
@@ -100,6 +106,47 @@ def update_graph_live(n):
     )
 
     return fig
+
+
+# div with flight information
+@app.callback(Output('flight-info', 'children'),
+              [Input('world-map', 'clickData')])
+def display_flight_info(clickData):
+    if clickData is not None:
+        flight_number = clickData['points'][0]['text']
+        flight_number = 'LH1961' # for test
+
+        df_flights = read_mongo(db='air_traffic_system', collection='flights', host=globals.mongohost)
+
+        df_flights = df_flights.dropna(subset=['OperatingCarrier.AirlineID', 'OperatingCarrier.FlightNumber'])
+        df_flights['flight_number_final'] = df_flights['OperatingCarrier.AirlineID'] + df_flights['OperatingCarrier.FlightNumber'].astype(str)
+        df_flights = df_flights[df_flights['flight_number_final'] == flight_number]  # filter by flight_number
+        
+        # df_flights = df_flights[df_flights['Arrival.Scheduled.Date'] > datetime.now()]  # filter by future date
+        # TODO: add filter by date or by flight status
+        # TODO: display dates and times
+        
+        if len(df_flights) == 0:
+            return html.Div([
+                html.P("No data found for the selected flight number"),
+                html.P(flight_number)
+            ])
+        
+        dep_airport = df_flights['Departure.AirportCode'].iloc[0]  # select the first airport code
+        arr_airport = df_flights['Arrival.AirportCode'].iloc[0]  # select the first airport code
+        count = len(df_flights)
+        
+        return html.Div([
+            html.H2(flight_number),
+            html.P(f"{dep_airport} --> {arr_airport}")
+            # ,html.P(f"Number of flights: {count}")
+        ]) 
+    else:
+        return html.Div([
+            html.P("Click on a flight to display its information")
+        ])
+
+
 
 if __name__ == '__main__':
     app.run_server(debug=True, host='0.0.0.0', port=8050)
