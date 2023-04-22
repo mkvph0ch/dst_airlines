@@ -2,15 +2,16 @@ import dash
 from dash import dcc
 from dash import html
 import plotly.graph_objects as go
-import pandas as pd
+# import pandas as pd
 import globals
-import requests
+# import requests
 from mongodb import get_geopositions_from_airlabs, write_mongo, read_mongo
-import time
+# import time
 import datetime
 from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
-import re
+import psycopg2
+
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.SUPERHERO])
 
@@ -114,7 +115,8 @@ def update_graph_live(n):
 def display_flight_info(clickData):
     if clickData is not None:
         flight_number = clickData['points'][0]['text']
-        flight_number = 'LH1961' # for test
+        ####### for test  #######
+        # flight_number = 'LH1961' 
 
         df_flights = read_mongo(db='air_traffic_system', collection='flights', host=globals.mongohost)
 
@@ -134,12 +136,13 @@ def display_flight_info(clickData):
         
         dep_airport = df_flights['Departure.AirportCode'].iloc[0]  # select the first airport code
         arr_airport = df_flights['Arrival.AirportCode'].iloc[0]  # select the first airport code
-        count = len(df_flights)
-        
-        return html.Div([
-            html.H2(flight_number),
-            html.P(f"{dep_airport} --> {arr_airport}")
-            # ,html.P(f"Number of flights: {count}")
+
+        dep_country, dep_city = get_city_country_by_airport(dep_airport)
+        arr_country, arr_city = get_city_country_by_airport(arr_airport)
+
+        return html.Div(children=[
+            html.H1(children=flight_number),
+            html.Div(children=f"{dep_city}, {dep_country} ({dep_airport}) --> {arr_city}, {arr_country} ({arr_airport})")
         ]) 
     else:
         return html.Div([
@@ -147,6 +150,30 @@ def display_flight_info(clickData):
         ])
 
 
+def get_city_country_by_airport(airport_code):
+    
+    # create a connection to the PostgreSQL database
+    conn = psycopg2.connect(host=globals.hostname,
+                        dbname=globals.database,
+                        user=globals.username,
+                        password=globals.pwd,
+                        port=globals.port_id)
 
+    cur = conn.cursor()
+    sql_query = f"SELECT CountryName, CityName FROM mv_airports_detailed WHERE AirportCode = upper('{airport_code}');"
+    cur.execute(sql_query)
+    results = cur.fetchall()
+    if len(results) > 0:
+      country = results[0][0]
+      city = results[0][1]
+    else:
+      return '',''
+
+    cur.close()
+    conn.close()
+
+    return country, city
+
+    
 if __name__ == '__main__':
     app.run_server(debug=True, host='0.0.0.0', port=8050)
