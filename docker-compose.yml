@@ -38,8 +38,26 @@ services:
       - postgres-data:/var/lib/postgresql/data
     networks:
       - my_network
+    restart: unless-stopped
     #extra_hosts:
       #- "host.docker.internal:host-gateway"
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: my_pgadmin
+    environment:
+        - PGADMIN_DEFAULT_EMAIL=postgres@postgres.com
+        - PGADMIN_DEFAULT_PASSWORD=postgres
+    ports:
+        - "8085:80"
+    volumes:
+       - pgadmin:/var/lib/pgadmin
+    networks:
+      - my_network
+    depends_on:
+      - postgres
+    restart: unless-stopped
+
 
   fastapi:
     build:
@@ -70,6 +88,7 @@ services:
 volumes:
   mongo-data:
   postgres-data:
+  pgadmin:
 
 networks:
   my_network:
