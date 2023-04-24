@@ -100,7 +100,7 @@ This will start the containers. It may take some time to complete.
 ### Step 3: Checking Containers 
 
 
-Run the following command to check if all 4 containers are up and running:
+Run the following command to check if all 6 containers are up and running:
 
 
 ```
@@ -109,7 +109,7 @@ Run the following command to check if all 4 containers are up and running:
 
 
 
-You should see 4 containers: my_mongo, my_postgres, my_dashboard, my_fastapi.
+You should see containers: my_mongo, my_postgres, my_dash, my_fastapi, mongo-express, pgadmin.
 
 
 ### Step 4: Loading Initial Data 
@@ -127,30 +127,17 @@ Run the following commands to load initial data into the databases:
 
 
 
-These scripts will load static data like cities, countries, airports, etc. into the Postgres database and flights and positions data into the MongoDB database. 
+These scripts will load static data like cities, countries, airports, etc. into the Postgres database and flights and positions data into the MongoDB database. All data will be stored in volumes locally. You need to do it only once.
 
 
-### Step 5: Running the Dashboard 
+### Step 5: Accessing container locally from a web-browser:
 
 
-After the data is loaded, you need to find the IP address used by the dashboard. Run the following command: 
+Dashboard:      localhost:8050 
+FastAPI:        localhost:8000/docs
+mongo-express:  localhost:8081
+pgAdmin:        localhost:8001
 
-
-```
-    docker inspect my_dashboard | grep IPAddress 
-```
-
-
-
-This will give you the IP address used by the dashboard. Open your web browser and go to _dash_container_IP:8050 _to access our dashboard. 
-
-
-### Step 6: Running the FastAPI 
-
-
-`docker inspect my_fastapi | grep IPAddress `
-
-Open your web browser and go to fastapi_container_IP:8000 to access our FastAPI.
 
 
 ## 4. Usage: 
@@ -159,7 +146,9 @@ Open your web browser and go to fastapi_container_IP:8000 to access our FastAPI.
 ### Dashboard. 
 
 
-Our dashboard allows you to track flights in real-time and access information about flights all over the world. By clicking on each point on the map, you can see the flight number and current geopositions. 
+Our dashboard allows you to track flights in real-time and access information about flights all over the world. By hovering over each point on the map, you can see the flight number and current geopositions. 
+
+For more interesting info on each flight, you can copy flight number from the dashboard and use it in our fastapi.
 
 
 ### FastAPI. 
@@ -171,7 +160,8 @@ All endpoints are described in docs/flights_api.rst.
 ```
     / 
     /airport_location/{airport_code:str} 
-    /flights/count/{airport_code:str}/{date:str} /flights/random 
+    /flights/count/{airport_code:str}
+    /flights/random 
     /flights/departure/{departure_airportcode:str}/{ac tual_departure_date:str} 
     /flights/arrival/{arrival_airportcode:str}/{actual _arrival_date:str} 
 ```
