@@ -17,7 +17,7 @@ def load_flights(db):
   # at the moment df_all_flights.csv is not avl in data folder, 
   # please change it to your local path to run this code
 
-  csv_files = ['df_flights_BER_PAR_MUC_20230326_20230402.csv']
+  csv_files = ['df_all_LH_fligths.csv']
   
   collection = db.flights
   # in case you need to delete all flights data
