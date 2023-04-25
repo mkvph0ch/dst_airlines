@@ -134,11 +134,19 @@ These scripts will load static data like cities, countries, airports, etc. into 
 
 
 Dashboard:      localhost:8050 
+
 FastAPI:        localhost:8000/docs
+
 mongo-express:  localhost:8081
-pgAdmin:        localhost:8001
 
+pgAdmin:        localhost:8085
+                User: postgres@postgres.com
+                PW: postgres
 
+PostgreSQL:     localhost:8001
+                User: postgres
+                PW: postgres
+                db: dst_airlines
 
 ## 4. Usage: 
 
