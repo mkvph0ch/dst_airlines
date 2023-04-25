@@ -58,8 +58,9 @@ Welcome to the DST_Airlines Dashboard and FastAPI documentation. This guide is d
 
 All of our source code can be found on Github at 
 
+https://github.com/mkvph0ch/dst_airlines. 
 
-https://github.com/mkvph0ch/dst_airlines. You can access our code and contribute to it if you like. 
+You can access our code and contribute to it if you like. 
 
 
 ## 3. Setup: 
@@ -71,10 +72,8 @@ https://github.com/mkvph0ch/dst_airlines. You can access our code and contribute
 To get started with our dashboard, you need to clone our Github repository to your local machine. Open your terminal and run the command: 
 
 
-```
-<p style="text-align: right">
+```shell
 git clone https://github.com/mkvph0ch/dst_airlines.git
-</p>
 ```
 
 
@@ -88,7 +87,7 @@ This will download our code to your local machine.
 Our dashboard uses Docker Compose to manage its containers. Open your terminal and navigate to the dst_airlines directory. Then run the following command: 
 
 
-```
+```shell
     sudo docker-compose up --build -d 
 ```
 
@@ -103,7 +102,7 @@ This will start the containers. It may take some time to complete.
 Run the following command to check if all 6 containers are up and running:
 
 
-```
+```shell
     docker ps 
 ```
 
@@ -121,8 +120,8 @@ Run the following commands to load initial data into the databases:
 
 
 ```
-    python pandas_to_sql.py 
-    python mongodb.py 
+    python src/pandas_to_sql.py 
+    python src/mongodb.py 
 ```
 
 
